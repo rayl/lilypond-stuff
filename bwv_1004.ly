@@ -26,61 +26,61 @@ breaks = {
   s2. \noBreak s2. \break
 }
 
-voiceA = {
+voiceA = \relative c' {
   % row 1 (1)
-    a'4. a'8
-  | e''4 e''4. e''8
-  | f''4 d''4. c''8
-  | bes'4 a' g'16( f' e' f')
-  | g'16( e') f'( d') a'4. a'8
-  | e''4 e''4. e''8
-  | f''4 d''4. d''8
+    a'4. a8
+  | e'4 e4. e8
+  | f4 d4. c8
+  | bes4 a g16( f e f)
+  | g16( e) f( d) a'4. a8
+  | e'4 e4. e8
+  | f4 d4. d8
   % row 2 (7)
-  | bes''4 a''8. g''32 f'' g''8. e''16
-  | d'8. e'16 f'8. g'32 a' bes'8. a'16
-  | g'8. f'16 g'8. bes'16 a'8. g'16
-  | f'8. e'16 <f' d''>8. <a' f''>16 <g' e''>8. <f' d''>16
-  | e'8. d'16 e'8. g'16 f'8. e'16
-  | d'8. e'16 f'8. g'32 a' bes'8. a'16
+  | bes'4 a8. g32 f g8. e16
+  | d,8. e16 f8. g32 a bes8. a16
+  | g8. f16 g8. bes16 a8. g16
+  | f8. e16 <f d'>8. <a f'>16 <g e'>8. <f d'>16
+  | e8. d16 e8. g16 f8. e16
+  | d8. e16 f8. g32 a bes8. a16
   % row 3 (13)
-  | g'8. f'16 g'8. bes'16 a'8. g'16
-  | f'8. e'16 <f' d''>8. <a' f''>16 <g' e''>8. <e' cis''>16
-  | <f' d''>8. <g' e''>16 d''4(  cis''8.) d''16
-  | d''8. e''16 f''8. g''32 a'' bes''8. f''16
-  | e''8. bes''16 a''8. g''16 a''8. fis''16
+  | g8. f16 g8. bes16 a8. g16
+  | f8. e16 <f d'>8. <a f'>16 <g e'>8. <e cis'>16
+  | <f d'>8. <g e'>16 d'4(  cis8.) d16
+  | d8. e16 f8. g32 a bes8. f16
+  | e8. bes'16 a8. g16 a8. fis16
   % row 4 (18)
-  | g''8. f''16 e''8. d''32 cis'' d''8. e''16
-  | f''8. g''16 e''8. f''16 g''8. e''16
-  | f''8. d''32 e''32 f''8. g''32 a'' b''8. f''16
+  | g8. f16 e8. d32 cis d8. e16
+  | f8. g16 e8. f16 g8. e16
+  | f8. d32 e32 f8. g32 a bes8. f16
 }
 
-voiceB = {
+voiceB = \relative c' {
   % row 1 (1)
-  \partial 2 <d' f'>2
-  | <d' g' bes'>4 <cis' g' a'>2
-  | <d' f' a'>4 <bes f'>2
-  | <g g'>4 <a f'> cis'
-  | d'8 s <d' f'>2
-  | <d' g' bes'>4 <cis' g' a'>2
-  | <d' f' a'>4 <bes f'>2
+  \partial 2 <d f>2
+  | <d g bes>4 <cis g' a>2
+  | <d f a>4 <bes f'>2
+  | <g g'>4 <a f'> cis
+  | d8 s <d f>2
+  | <d g bes>4 <cis g' a>2
+  | <d f a>4 <bes f'>2
   % row 2 (7)
-  | <g e' d''>4 <a e' cis''>8. s16 s4
-  | <d'' f''>8. s16 s2
-  | <d' bes' e''>8 s <cis' a' e''> s s4
-  | <d' a' e''>8 s bes s s s16 g
-  | { \override NoteColumn #'force-hshift = #'-0.25 <a d''>8 s }
-    { \override NoteColumn #'force-hshift = #'-0.50 cis'' s s s16 <a cis'' a''> }
-  | <d'' f''>8 s s2
+  | <g e' d'>4 <a e' cis'>8. s16 s4
+  | <d' f>8. s16 s2
+  | <d, bes' e>8 s <cis a' e'> s s4
+  | <d a' e'>8 s bes s s s16 g
+  | { \override NoteColumn #'force-hshift = #-0.25 <a d'>8 s }
+    { \override NoteColumn #'force-hshift = #-0.50 cis' s s s16 <a, cis' a'> }
+  | <d' f>8 s s2
   % row 3 (13)
-  | <d' bes' e''>8 s <cis' a' e''> s s4
-  | <d' a' e''>8 s { \override NoteColumn #'force-hshift = #'0.2 bes s s s16 bes }
-  | a8. g16 <a c'>2
-  | d'8 s s4 s8 s16 d''16
-  | cis''4 c'' s8 s16 c''
+  | <d, bes' e>8 s <cis a' e'> s s4
+  | <d a' e'>8 s { \override NoteColumn #'force-hshift = #0.2 bes s s s16 bes }
+  | a8. g16 <a e'>2
+  | d8 s s4 s8 s16 d'16
+  | cis4 c s8 s16 c
   % row 4 (18)
-  | b'4 bes' s8 s16 bes'
-  | a'8. b'16 cis''8. d''16 e''8. cis''16
-  | d''8. s16 s4 s8 s16 d''16
+  | b4 bes s8 s16 bes
+  | a8. b16 cis8. d16 e8. cis16
+  | d8. s16 s4 s8 s16 d16
 }
 
 \score {
