@@ -86,8 +86,8 @@ voiceB = {
 \score {
   \new Staff {
     \clef treble
-    \time 3/4
     \key d \minor
+    \time 3/4
     \partial 2
     << \voiceA \\ \voiceB \\ \breaks >>
   }
