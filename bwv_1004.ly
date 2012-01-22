@@ -9,6 +9,16 @@
   copyright = "Copyright 2012 Ray Lehtiniemi <rayl@mail.com>"
 }
 
+\layout {
+  ragged-last = ##t
+}
+
+breaks = {
+  s2 \noBreak
+  \repeat unfold 62 { s2. \noBreak s2. \noBreak s2. \noBreak s2. \break }
+  s2. \noBreak s2. \break
+}
+
 voiceA = {
   % row 1 (1)
     a'4. a'8
@@ -72,7 +82,7 @@ voiceB = {
     \time 3/4
     \key d \minor
     \partial 2
-    << \voiceA \\ \voiceB >>
+    << \voiceA \\ \voiceB \\ \breaks >>
   }
   \header {
     piece = "Ciaccona"
