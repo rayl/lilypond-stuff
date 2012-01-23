@@ -22,9 +22,16 @@
   ragged-last = ##t
 }
 
+barsTwo   = { s2. \noBreak s2. \break }
+barsThree = { s2. \noBreak s2. \noBreak s2. \break }
+barsFour  = { s2. \noBreak s2. \noBreak s2. \noBreak s2. \break }
+
 breaks = {
   s2 \noBreak
-  \repeat unfold 62 { s2. \noBreak s2. \noBreak s2. \noBreak s2. \break }
+  \barsThree
+  \repeat unfold 15 \barsFour
+  \repeat unfold 6 \barsTwo
+  \repeat unfold 45 \barsFour
   s2. \noBreak s2. \break
 }
 
@@ -124,6 +131,9 @@ voiceA = \relative c' {
   | d16_([ a32 g f16) e] d c bes a bes[ \stemDown d'32^( c bes a g f)] \stemUp
   | e16_([ g32 f e16) d] c bes a g a[ \stemDown c'32^( bes a g f ees)] \stemUp
   | d16[ f32_( ees) d16 c] bes[ d32 c bes16 a] g[ \stemDown bes'32^( a g f e d)] \stemUp
+
+  % page 2, row 3, bar 67
+  | cis32_([ b a b cis d e f)] g_([ a bes a g f e d)] cis16[ \stemDown e'32^( d cis b a g)] \stemUp
 }
 
 voiceB = \relative c' {
