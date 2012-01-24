@@ -27,11 +27,10 @@ barsThree = { s2. \noBreak s2. \noBreak s2. \break }
 barsFour  = { s2. \noBreak s2. \noBreak s2. \noBreak s2. \break }
 
 breaks = {
-  s2 \noBreak
-  \barsThree
+  s2 \noBreak \barsThree
   \repeat unfold 15 \barsFour
-  \repeat unfold 6 \barsTwo
-  \repeat unfold 45 \barsFour
+  \repeat unfold 12 \barsTwo
+  \repeat unfold 40 \barsFour
   s2. \noBreak s2. \break
 }
 
@@ -70,52 +69,52 @@ voiceA = \relative c' {
 
   % page 1, row 5, bar 23
   | f8. g16 d8. cis32 b cis8. g16
-  | f8 f' e d cis d
-  | g,8 a16_( bes) cis,8 bes' a g
-  | f g16_( a) bes,8 d g d'16_( cis)
+  | f8 f' e[ d] cis d
+  | g,8 a16_( bes) cis,8[ bes'] a g
+  | f g16_( a) bes,8[ d] g d'16_( cis)
   | d8 f, e16 f_( g) bes a g f e
 
   % page 1, row 6, bar 28
-  | f a_( d f) f_( e g f e d cis) d
+  | f a_( d f) \stemDown f^( e g f e d cis) d \stemUp
   | g, bes fis g cis, e_( g) bes a g e' g,
-  | f cis d a bes d_( g) a bes ees cis d
-  | gis, b_( d) f e g cis, d a,_( e' d') cis
+  | f cis d a bes d_( g) a \stemDown bes ees cis d
+  | gis, b^( d) f e g cis, d \stemUp a,_( e' d') cis
 
   % page 1, row 7, bar 32
-  | d8 f bes a gis d,
-  | cis e' a g fis c,
-  | b d' g f e bes,
-  | bes16 f'' e d cis8 a e' g,
-  | f16 d f a d_( f bes) a gis b g e
-  | cis_( e a) g fis a fis b, a fis d c
+  | \stemDown d8 f bes a gis \stemUp d,
+  | cis \stemDown e' a g fis \stemUp c,
+  | b \stemDown d' g f e \stemUp bes,
+  | bes16 \stemDown f'' e d \stemUp cis8[ a] e' g,
+  | f16 d f a \stemDown d^( f bes) a gis b g e
+  | cis^( e a) g fis a fis b, \stemUp a fis d c
 
   % page 1, row 8, bar 38
-  | b_( d g) fis g ees'_( d cis) b'_( a gis) a
-  | f e d c bes_( a gis) a cis, g' f e
+  | b_( d g) fis \stemDown g ees'^( d cis) b'^( a gis) a
+  | f e d c bes^( a gis) a \stemUp cis, g' f e
   | f d e f g a b cis d f, e d
   | a_( e' d') cis d,_( fis a) c c bes c bes
 
   % page 1, row 9, bar 42
   | bes g f ees d c bes a g_( g' ees') d
   | cis e a, g f d' e, d a_( e' d') cis
-  | g'_( e f) cis d_( c bes a g f e d)
+  | \stemDown g'^( e f) cis \stemUp d_( c bes a g f e d)
   | cis bes' a g fis d a' d, c bes c a
 
   % page 1, row 10, bar 46
   | bes_( g a bes c d e fis g a bes) a
   | gis a e f g cis,_( d) gis,_( a) f' e cis
-  | d d' a_( g f e d c bes) d' g, f
-  | e c' g_( f e d c bes a) c' f, ees
+  | d d' a_( g f e d c bes) \stemDown d' g, f \stemUp
+  | e c' g_( f e d c bes a) \stemDown c' f, ees \stemUp
 
   % page 1, row 11, bar 50
-  | d bes' g_( ees d c bes a g) bes' e, d
+  | d bes' g_( ees d c bes a g) \stemDown bes' e, d \stemUp
   | cis a c e a e a cis e g, a e
-  | f d f a d a d f bes, g'( a bes)
-  | e, c, e g c g c e a, f'_( g a)
-  | d, bes, d f bes f bes d g, e'_( f g)
+  | f d f a \stemDown d a d f bes, g'^( a bes)
+  | e, \stemUp c, e g \stemDown c g c e a, f'^( g a)
+  | d, \stemUp bes, d f bes f bes d \stemDown g, e'^( f g)
 
   % page 1, row 12, bar 55
-  | cis, a cis e a e a cis e g,_( f e)
+  | cis, a cis e a e a cis e g,^( f e) \stemUp
   | f8 s s f g \noBeam s
   | e s s e f \noBeam s
   | d s s d e \noBeam s
@@ -134,6 +133,39 @@ voiceA = \relative c' {
 
   % page 2, row 3, bar 67
   | cis32_([ b a b cis d e f)] g_([ a bes a g f e d)] cis16[ \stemDown e'32^( d cis b a g)] \stemUp
+  | f16_([ d32 e f16) a] f d f a \stemDown bes32^\([ c d e f g a bes] \stemUp
+  | \stemDown e,16\)[ \stemUp c,32_( d e16 g)] e c e g \stemDown a32^\([ bes c d e f g a] \stemUp
+
+  % page 2, row 4, bar 70
+  | \stemDown d,16\)[ \stemUp bes,32_( c d16) f] d bes d f \stemDown g32^\([ a bes c d e f g\)] \stemUp
+  | \stemDown cis,32^([ bes' a g f e d c)] \stemUp bes_([ a g f e d cis b)] a_([ b cis d e f g e)]
+  | f32[ d e f g a b cis] \stemDown d[ b cis d e f g a] bes16[ \stemUp d,, c \trill bes]
+
+  % page 2, row 5, bar 73
+  | c32[ d e fis g a bes c] \stemDown d[ a bes c d e fis g] a16[ \stemUp c,, bes a]
+  | bes32[ d e fis g a bes c] \stemDown d[ g, a bes c d e fis] g[ a bes a g f e d]
+  | cis32[ a' g f e d cis b] a[ b cis d e f g a] bes[ g e cis a g f e] \stemUp
+
+  % page 2, row 6, bar 76
+  | d16 a' d e \stemDown f d bes a \stemUp gis_( b d) f
+  | c,16 e a c \stemDown e c a g \stemUp fis a c ees
+  | bes,16 d g bes \stemDown d bes g f \stemUp e_( g bes) cis
+  | a,16 d f a \stemDown d a f d \stemUp a e' g cis
+
+  % page 2, row 7, bar 80
+  | d,16( \stemDown bes'') bes( gis) gis( f) f( d) d b gis e \stemUp
+  | cis16( \stemDown a'') a( fis) fis( ees) ees( c) c a fis d \stemUp
+  | b16( \stemDown g'') g( ees) ees( cis) cis( bes) bes g e cis \stemUp
+  | a16_( cis) cis_( e) e_([ g32 f) g16_( bes32 a)] bes16_([ cis32 d e16) g,]
+
+  % page 2, row 8, bar 84
+  | f32_( a b cis) \stemDown d^( cis b a) f'^( e d cis) d^( e f g) a^( g f e) bes'^( a g f)
+  | c32^( e fis gis) a^( gis fis e) c'^( b a gis) a^( b c d) e^( d c b) f'^( e d cis)
+  | d^( e f e) d^( f e d) f^( e d f) e^( d f e) d^([ g f e d c bes a)]
+
+  % page 2, row 9, bar 87
+  | g32^( a bes a) g^( bes a g) bes^( a g bes) a^( g bes a) g^([ f e d cis b a g)] \stemUp
+
 }
 
 voiceB = \relative c' {
@@ -154,10 +186,10 @@ voiceB = \relative c' {
   | <d a' e'>8 s bes s s s16 g
   | { \override NoteColumn #'force-hshift = #-0.25 <a d'>8 s }
     { \override NoteColumn #'force-hshift = #-0.50 cis' s s s16 <a, cis' a'> }
-  | <d' f>8 s s2
+  | <d d' f>8 s s2
 
   % page 1, row 3, bar 13
-  | <d, bes' e>8 s <cis a' e'> s s4
+  | <d bes' e>8 s <cis a' e'> s s4
   | <d a' e'>8 s { \override NoteColumn #'force-hshift = #0.2 bes s s s16 bes }
   | a8. g16 <a e'>2
   | d8 s s4 s8. d'16
@@ -175,7 +207,7 @@ voiceB = \relative c' {
   | d8 s s2
   | d8 s s2
   | d8 s s2
-  | s8 g, a s s4
+  | s8 g, \noBeam a s s4
 
   % page 1, row 6, bar 28
   | d8 s s2
@@ -183,9 +215,9 @@ voiceB = \relative c' {
 
   % page 1, row 12, bar 55
   | s2.
-  | d'8 a d, d' bes16^( a bes) g
-  | c8 g c, c' a16 g a f
-  | bes8 f bes, bes' g16^( f g e)
+  | d'8 a d,[ d'] bes16^( a bes) g
+  | c8 g c,[ c'] a16 g a f
+  | bes8 f bes,[ bes'] g16^( f g e)
 
   % page 2, row 1, bar 59
   | f16^( e) f^( d) <e a,>8 \noBeam d'16^([ b)] cis,8 s
