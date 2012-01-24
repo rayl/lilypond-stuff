@@ -15,7 +15,7 @@
       \with { printKeyCancellation = ##f }
       <<
         \new Voice \ciaccona
-        \new Voice \ciacconaRhythm
+        \new Voice \ciacconaBreaks
       >>
     \header {
       piece = "Ciaccona"

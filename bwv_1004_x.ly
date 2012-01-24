@@ -14,11 +14,11 @@
   copyright = "Transcription Copyright 2012 Ray Lehtiniemi <rayl@mail.com>"
 }
 
-bar       = { s2. \noBreak }
-brk       = { s2. \break   }
+bar = { s2. \noBreak }
+brk = { s2. \break }
 
-barsTwo   = { \repeat unfold 1 \bar \brk }
-barsThree = { \repeat unfold 2 \bar \brk }
-barsFour  = { \repeat unfold 3 \bar \brk }
-barsEight = { \repeat unfold 7 \bar \brk }
+twoMeasures   = { \repeat unfold 1 \bar \brk }
+threeMeasures = { \repeat unfold 2 \bar \brk }
+fourMeasures  = { \repeat unfold 3 \bar \brk }
+eightMeasures = { \repeat unfold 7 \bar \brk }
 
