@@ -6,6 +6,14 @@
 
 \version "2.12.3"
 
+\header {
+  title = "Partita No.2 in D minor"
+  opus = "BWV 1004"
+  composer = "Johann Sebastian Bach (1685-1750)"
+  instrument = "Solo violin"
+  copyright = "Transcription Copyright 2012 Ray Lehtiniemi <rayl@mail.com>"
+}
+
 bar       = { s2. \noBreak }
 brk       = { s2. \break   }
 
