@@ -6,8 +6,6 @@
 
 \version "2.12.3"
 
-\include "bwv_1004_5.ly"
-
 \header {
   title = "Partita No.2 in D minor"
   opus = "BWV 1004"
@@ -15,6 +13,9 @@
   instrument = "Solo violin"
   copyright = "Transcription Copyright 2012 Ray Lehtiniemi <rayl@mail.com>"
 }
+
+\include "bwv_1004_x.ly"
+\include "bwv_1004_5.ly"
 
 \score {
   \new Staff {

@@ -9,24 +9,15 @@
 %  http://www.youtube.com/watch?v=yv5HmKomT7Y
 
 
-bar       = { s2. \noBreak }
-brk       = { s2. \break   }
-
-barsTwo   = { \repeat unfold 1 \bar \brk }
-barsThree = { \repeat unfold 2 \bar \brk }
-barsFour  = { \repeat unfold 3 \bar \brk }
-barsEight = { \repeat unfold 7 \bar \brk }
-
-
 % --------------------- bars 1 through 88 ---------------------------
 
-ciacconaXone = { \partial 2 \relative c' {
+ciacconaOneX = { \partial 2 \relative c' {
   s2 \noBreak \barsThree
   \repeat unfold 15 \barsFour
   \repeat unfold 12 \barsTwo
 }}
 
-ciacconaAone = { \partial 2 \relative c' {
+ciacconaOneA = { \partial 2 \relative c' {
 
   % page 1, row 1, bar 1
     a'4. a8
@@ -160,7 +151,7 @@ ciacconaAone = { \partial 2 \relative c' {
 
 }}
 
-ciacconaBone = { \partial 2 \relative c' {
+ciacconaOneB = { \partial 2 \relative c' {
 
   % page 1, row 1, bar 1
     <d f>2
@@ -226,23 +217,25 @@ ciacconaBone = { \partial 2 \relative c' {
 
 }}
 
+ciacconaOne = << \ciacconaOneA \\ \ciacconaOneB \\ \ciacconaOneX >>
+
 
 % --------------------- bars 89 through 136 ---------------------------
 
-ciacconaXtwo = { \relative c' {
+ciacconaTwoX = { \relative c' {
   \repeat unfold 4 \barsEight
   \repeat unfold 4 \barsTwo
   \repeat unfold 7 \bar \key d \major \brk
 }}
 
-ciacconaAtwo = { \relative c' {
+ciacconaTwoA = { \relative c' {
   f2.-"todo..."
   \repeat unfold 31 f2.
   \repeat unfold 8 { c32 d e f g a bes c  c bes a g f e d c  c d e f g a bes c }
   \repeat unfold 7 f2. fis2.
 }}
 
-ciacconaBtwo = { \relative c' {
+ciacconaTwoB = { \relative c' {
   \override NoteColumn #'force-hshift = #0
   \repeat unfold 32 { c4 c c }
   \repeat unfold 8 s2.
@@ -250,7 +243,7 @@ ciacconaBtwo = { \relative c' {
   \revert NoteColumn #'force-hshift
 }}
 
-ciacconaCtwo = { \relative c' {
+ciacconaTwoC = { \relative c' {
   \override NoteColumn #'force-hshift = #0
   \repeat unfold 32 { g4 g g }
   \repeat unfold 8 s2.
@@ -258,20 +251,22 @@ ciacconaCtwo = { \relative c' {
   \revert NoteColumn #'force-hshift
 }}
 
+ciacconaTwo = << \ciacconaTwoA \\ \ciacconaTwoB \\ \ciacconaTwoC \\ \ciacconaTwoX >>
 
 
 
 % --------------------- bars 136 through XX ---------------------------
 
-ciacconaXthree = { \relative c' {
+ciacconaThreeX = { \relative c' {
 }}
 
-ciacconaAthree = { \relative c' {
+ciacconaThreeA = { \relative c' {
 }}
 
-ciacconaBthree = { \relative c' {
+ciacconaThreeB = { \relative c' {
 }}
 
+ciacconaThree = << \ciacconaThreeA \\ \ciacconaThreeB \\ \ciacconaThreeX >>
 
 
 
@@ -281,10 +276,8 @@ ciaccona = {
   \clef treble
   \key d \minor
   \time 3/4
-  {
-    << \ciacconaAone \\ \ciacconaBone \\ \ciacconaXone >>
-    << \ciacconaAtwo \\ \ciacconaBtwo \\ \ciacconaCtwo \\ \ciacconaXtwo >>
-    << \ciacconaAthree \\ \ciacconaBthree \\ \ciacconaXthree >>
-  }
+  \ciacconaOne
+  \ciacconaTwo
+  \ciacconaThree
 }
 
