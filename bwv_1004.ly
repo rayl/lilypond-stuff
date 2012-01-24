@@ -9,15 +9,20 @@
 \include "bwv_1004_x.ly"
 \include "bwv_1004_5.ly"
 
-\score {
-  \new Staff {
-    \ciaccona
-  }
-  \header {
-    piece = "Ciaccona"
-  }
-  \layout {
-    ragged-last = ##t
+\book {
+  \score {
+    \new Staff
+      \with { printKeyCancellation = ##f }
+      <<
+        \new Voice \ciaccona
+        \new Voice \ciacconaRhythm
+      >>
+    \header {
+      piece = "Ciaccona"
+    }
+    \layout {
+      ragged-last = ##t
+    }
   }
 }
 

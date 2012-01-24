@@ -222,7 +222,7 @@ ciacconaOneB = {
 ciacconaOne = {
   \partial 2
   \relative c'
-  << \ciacconaOneA \\ \ciacconaOneB \\ \ciacconaOneX >>
+  << \ciacconaOneA \\ \ciacconaOneB >>
 }
 
 
@@ -231,14 +231,16 @@ ciacconaOne = {
 ciacconaTwoX = {
   \repeat unfold 4 \barsEight
   \repeat unfold 4 \barsTwo
-  \repeat unfold 7 \bar \set Staff.printKeyCancellation = ##f \key d \major \brk
+  \repeat unfold 1 \barsEight
 }
 
 ciacconaTwoA = {
   f2.-"todo..."
   \repeat unfold 31 f2.
   \repeat unfold 8 { c32 d e f g a bes c  c bes a g f e d c  c d e f g a bes c }
-  \repeat unfold 7 f2. fis2.
+  \repeat unfold 7 f2.
+  \key d \major
+  fis2.
 }
 
 ciacconaTwoB = {
@@ -259,7 +261,7 @@ ciacconaTwoC = {
 
 ciacconaTwo = {
   \relative c'
-  << \ciacconaTwoA \\ \ciacconaTwoB \\ \ciacconaTwoC \\ \ciacconaTwoX >>
+  << \ciacconaTwoA \\ \ciacconaTwoB \\ \ciacconaTwoC >>
 }
 
 
@@ -277,7 +279,7 @@ ciacconaThreeB = {
 
 ciacconaThree = {
   \relative c'
-  << \ciacconaThreeA \\ \ciacconaThreeB \\ \ciacconaThreeX >>
+  << \ciacconaThreeA \\ \ciacconaThreeB >>
 }
 
 
@@ -291,5 +293,12 @@ ciaccona = {
   \ciacconaOne
   \ciacconaTwo
   \ciacconaThree
+}
+
+ciacconaRhythm = {
+  \time 3/4
+  \ciacconaOneX
+  \ciacconaTwoX
+  \ciacconaThreeX
 }
 
