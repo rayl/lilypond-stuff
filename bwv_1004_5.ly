@@ -231,7 +231,7 @@ ciacconaOne = {
 ciacconaTwoX = {
   \repeat unfold 4 \barsEight
   \repeat unfold 4 \barsTwo
-  \repeat unfold 7 \bar \key d \major \brk
+  \repeat unfold 7 \bar \set Staff.printKeyCancellation = ##f \key d \major \brk
 }
 
 ciacconaTwoA = {
