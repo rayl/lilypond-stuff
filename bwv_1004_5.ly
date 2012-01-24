@@ -11,13 +11,13 @@
 
 % --------------------- bars 1 through 88 ---------------------------
 
-ciacconaOneX = { \partial 2 \relative c' {
+ciacconaOneX = {
   s2 \noBreak \barsThree
   \repeat unfold 15 \barsFour
   \repeat unfold 12 \barsTwo
-}}
+}
 
-ciacconaOneA = { \partial 2 \relative c' {
+ciacconaOneA = {
 
   % page 1, row 1, bar 1
     a'4. a8
@@ -149,9 +149,9 @@ ciacconaOneA = { \partial 2 \relative c' {
   % page 2, row 9, bar 88
   | g32^( a bes a) g^( bes a g) bes^( a g bes) a^( g bes a) g^([ f e d cis b a g)] \stemUp
 
-}}
+}
 
-ciacconaOneB = { \partial 2 \relative c' {
+ciacconaOneB = {
 
   % page 1, row 1, bar 1
     <d f>2
@@ -215,58 +215,68 @@ ciacconaOneB = { \partial 2 \relative c' {
   | bes8 s s2
   | \repeat unfold 20 s2.
 
-}}
+}
 
-ciacconaOne = << \ciacconaOneA \\ \ciacconaOneB \\ \ciacconaOneX >>
+ciacconaOne = {
+  \partial 2
+  \relative c'
+  << \ciacconaOneA \\ \ciacconaOneB \\ \ciacconaOneX >>
+}
 
 
 % --------------------- bars 89 through 136 ---------------------------
 
-ciacconaTwoX = { \relative c' {
+ciacconaTwoX = {
   \repeat unfold 4 \barsEight
   \repeat unfold 4 \barsTwo
   \repeat unfold 7 \bar \key d \major \brk
-}}
+}
 
-ciacconaTwoA = { \relative c' {
+ciacconaTwoA = {
   f2.-"todo..."
   \repeat unfold 31 f2.
   \repeat unfold 8 { c32 d e f g a bes c  c bes a g f e d c  c d e f g a bes c }
   \repeat unfold 7 f2. fis2.
-}}
+}
 
-ciacconaTwoB = { \relative c' {
+ciacconaTwoB = {
   \override NoteColumn #'force-hshift = #0
   \repeat unfold 32 { c4 c c }
   \repeat unfold 8 s2.
   \repeat unfold 7 { c4 c c } { cis4 cis cis }
   \revert NoteColumn #'force-hshift
-}}
+}
 
-ciacconaTwoC = { \relative c' {
+ciacconaTwoC = {
   \override NoteColumn #'force-hshift = #0
   \repeat unfold 32 { g4 g g }
   \repeat unfold 8 s2.
   \repeat unfold 8 { g4 g g }
   \revert NoteColumn #'force-hshift
-}}
+}
 
-ciacconaTwo = << \ciacconaTwoA \\ \ciacconaTwoB \\ \ciacconaTwoC \\ \ciacconaTwoX >>
+ciacconaTwo = {
+  \relative c'
+  << \ciacconaTwoA \\ \ciacconaTwoB \\ \ciacconaTwoC \\ \ciacconaTwoX >>
+}
 
 
 
 % --------------------- bars 136 through XX ---------------------------
 
-ciacconaThreeX = { \relative c' {
-}}
+ciacconaThreeX = {
+}
 
-ciacconaThreeA = { \relative c' {
-}}
+ciacconaThreeA = {
+}
 
-ciacconaThreeB = { \relative c' {
-}}
+ciacconaThreeB = {
+}
 
-ciacconaThree = << \ciacconaThreeA \\ \ciacconaThreeB \\ \ciacconaThreeX >>
+ciacconaThree = {
+  \relative c'
+  << \ciacconaThreeA \\ \ciacconaThreeB \\ \ciacconaThreeX >>
+}
 
 
 
