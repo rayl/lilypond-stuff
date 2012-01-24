@@ -16,17 +16,15 @@
   copyright = "Transcription Copyright 2012 Ray Lehtiniemi <rayl@mail.com>"
 }
 
-\layout {
-  ragged-last = ##t
-}
-
-
 \score {
   \new Staff {
     \ciaccona
   }
   \header {
     piece = "Ciaccona"
+  }
+  \layout {
+    ragged-last = ##t
   }
 }
 
