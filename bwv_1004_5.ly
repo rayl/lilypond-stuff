@@ -166,12 +166,10 @@ ciacconaOneB = {
 
   % page 1, stave 2, measure 8
   | <g e' d'>4 <a e' cis'>8. s16 s4
-  | <d' f>8. s16 s2
+  | \once \override Stem #'length = #15.5 <d' f>8. s16 s2
   | <d, bes' e>8 s <cis a' e'> s s4
   | <d a' e'>8 s bes s s s16 g
-  | \override NoteColumn #'force-hshift = #-0.25 <a d'>8 s
-    \override NoteColumn #'force-hshift = #-0.50 cis' s s s16 <a, cis' a'>
-    \revert NoteColumn #'force-hshift
+  | <a d'>8 s \once \override Stem #'length = #13 cis' s s s16 \once \override NoteColumn #'force-hshift = #1.40 <a, cis' a'>
   | <d d' f>8 s s2
 
   % page 1, stave 3, measure 14
