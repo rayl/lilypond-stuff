@@ -195,7 +195,7 @@ ciacconaOneB = {
 
   % page 1, stave 6, measure 29
   | d8 s s2
-  | \repeat unfold 26 s2.
+  | s2.*26
 
   % page 1, stave 12, measure 56
   | s2.
@@ -214,7 +214,7 @@ ciacconaOneB = {
   | d,8 s s2
   | c8 s s2
   | bes8 s s2
-  | \repeat unfold 20 s2.
+  | s2.*20
 
 }
 
@@ -282,7 +282,7 @@ ciacconaTwoA = {
   \repeat unfold 8 { c32-"todo..." d e f g a bes c  c bes a g f e d c  c d e f g a bes c }
   \autoBeamOff
 
-  \repeat unfold 7 f2.-"todo..."
+  f2.*7-"todo..."
   \key d \major
   fis2.-"todo..."
 
@@ -334,8 +334,8 @@ ciacconaTwoB = {
   % page 3, stave 1, measure 119
   | bes bes a
   | gis a2
-  \repeat unfold 8 s2.
-  \repeat unfold 8 s2.
+  | s2.*8
+  | s2.*8
 
   \revert NoteColumn #'force-hshift
   \autoBeamOn
@@ -386,8 +386,8 @@ ciacconaTwoC = {
   % page 3, stave 1, measure 119
   | f g f
   | e e2
-  \repeat unfold 8 s2.
-  \repeat unfold 8 s2.
+  | s2.*8
+  | s2.*8
 
   \revert NoteColumn #'force-hshift
   \autoBeamOn
