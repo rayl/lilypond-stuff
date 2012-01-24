@@ -144,12 +144,12 @@ ciacconaOneA = {
   | a16_( cis) cis_( e) e_([ g32 f) g16_( bes32 a)] bes16_([ cis32 d e16) g,]
 
   % page 2, row 8, bar 85
-  | f32_( a b cis) \stemDown d^( cis b a) f'^( e d cis) d^( e f g) a^( g f e) bes'^( a g f)
+  | f32_( a b cis) \stemDown d^( cis b a) \clef "treble^8" f'^( e d cis) d^( e f g) a^( g f e) bes'^( a g f)
   | c32^( e fis gis) a^( gis fis e) c'^( b a gis) a^( b c d) e^( d c b) f'^( e d cis)
   | d^( e f e) d^( f e d) f^( e d f) e^( d f e) d^([ g f e d c bes a)]
 
   % page 2, row 9, bar 88
-  | g32^( a bes a) g^( bes a g) bes^( a g bes) a^( g bes a) g^([ f e d cis b a g)] \stemUp
+  | g32^( a bes a) g^( bes a g) bes^( a g bes) a^( g bes a) \clef treble g^([ f e d cis b a g)] \stemUp
 
 }
 
