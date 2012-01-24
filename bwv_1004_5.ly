@@ -77,11 +77,11 @@ ciacconaOneA = {
   | b_( d g) fis \stemDown g ees'^( d cis) b'^( a gis) a
   | f e d c bes^( a gis) a \stemUp cis, g' f e
   | f d e f g a b cis d f, e d
-  | a_( e' d') cis d,_( fis a) c c bes c bes
+  | a_( e' d') cis d,_( fis a) c \stemDown c bes c bes \stemUp
 
   % page 1, row 9, bar 43
-  | bes g f ees d c bes a g_( g' ees') d
-  | cis e a, g f d' e, d a_( e' d') cis
+  | bes g f ees d c bes a g^( \stemDown g' ees') d
+  | cis e a, g f d' e, d \stemUp a_( e' d') cis
   | \stemDown g'^( e f) cis \stemUp d_( c bes a g f e d)
   | cis bes' a g fis d a' d, c bes c a
 
@@ -117,7 +117,7 @@ ciacconaOneA = {
   | d16[ f32_( ees) d16 c] bes[ d32 c bes16 a] g[ \stemDown bes'32^( a g f e d)] \stemUp
 
   % page 2, row 3, bar 68
-  | cis32_([ b a b cis d e f)] g_([ a bes a g f e d)] cis16[ \stemDown e'32^( d cis b a g)] \stemUp
+  | cis32_([ b a b cis d e f)] \stemDown g^([ a bes a g f e d)] \stemUp cis16[ \stemDown e'32^( d cis b a g)] \stemUp
   | f16_([ d32 e f16) a] f d f a \stemDown bes32^\([ c d e f g a bes] \stemUp
   | \stemDown e,16\)[ \stemUp c,32_( d e16 g)] e c e g \stemDown a32^\([ bes c d e f g a] \stemUp
 
@@ -141,11 +141,11 @@ ciacconaOneA = {
   | d,16( \stemDown bes'') bes( gis) gis( f) f( d) d b gis e \stemUp
   | cis16( \stemDown a'') a( fis) fis( ees) ees( c) c a fis d \stemUp
   | b16( \stemDown g'') g( ees) ees( cis) cis( bes) bes g e cis \stemUp
-  | a16_( cis) cis_( e) e_([ g32 f) g16_( bes32 a)] bes16_([ cis32 d e16) g,]
+  | a16_( cis) cis_( e) e_([ g32 f) g16_( bes32 a)] \stemDown bes16^([ cis32 d e16) g,] \stemUp
 
   % page 2, row 8, bar 85
-  | f32_( a b cis) \stemDown d^( cis b a) \clef "treble^8" f'^( e d cis) d^( e f g) a^( g f e) bes'^( a g f)
-  | c32^( e fis gis) a^( gis fis e) c'^( b a gis) a^( b c d) e^( d c b) f'^( e d cis)
+  | f32_( a b cis) \stemDown d^( cis b a) \clef "treble^8" \stemUp f'_( e d cis) d_( e f g) a_( g f e) bes'_( a g f)
+  | c32_( e fis gis) a_( gis fis e) \stemDown c'^( b a gis) a^( b c d) e^( d c b) f'^( e d cis)
   | d^( e f e) d^( f e d) f^( e d f) e^( d f e) d^([ g f e d c bes a)]
 
   % page 2, row 9, bar 88
