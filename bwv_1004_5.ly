@@ -169,13 +169,14 @@ ciacconaOneB = {
   | <d' f>8. s16 s2
   | <d, bes' e>8 s <cis a' e'> s s4
   | <d a' e'>8 s bes s s s16 g
-  | { \override NoteColumn #'force-hshift = #-0.25 <a d'>8 s }
-    { \override NoteColumn #'force-hshift = #-0.50 cis' s s s16 <a, cis' a'> }
+  | \override NoteColumn #'force-hshift = #-0.25 <a d'>8 s
+    \override NoteColumn #'force-hshift = #-0.50 cis' s s s16 <a, cis' a'>
+    \revert NoteColumn #'force-hshift
   | <d d' f>8 s s2
 
   % page 1, stave 3, measure 14
   | <d bes' e>8 s <cis a' e'> s s4
-  | <d a' e'>8 s { \override NoteColumn #'force-hshift = #0.2 bes s s s16 bes }
+  | <d a' e'>8 s bes s s s16 bes
   | a8. g16 <a e'>2
   | d8 s s4 s8. d'16
   | cis4 c s8. c16
