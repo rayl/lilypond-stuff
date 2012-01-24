@@ -234,28 +234,163 @@ ciacconaTwoBreaks = {
 }
 
 ciacconaTwoA = {
-  f2.-"todo..."
-  \repeat unfold 31 f2.
-  \repeat unfold 8 { c32 d e f g a bes c  c bes a g f e d c  c d e f g a bes c }
-  \repeat unfold 7 f2.
+
+  % page 2, stave 9, measure 89
+  | f32_( d) \stemDown a''( \stemUp d,,) f32_( d) \stemDown a'' \stemUp d,,
+    \autoBeamOff a''2-"arpeggio"
+  | g2 g4
+  | f2 f4
+
+  % page 2, stave 10, measure 92
+  | e8 f e d d cis
+  | d2.
+  | ees
+  | d
+  | d2 cis4
+  | d a bes
+  | c bes a
+  | bes bes' a
+  | g8 f e2
+
+  % page 2, stave 11, measure 101
+  | f2.
+  | fis
+  | g4 f e
+  | f cis2
+  | d4 f f
+  | f e ees
+  | e <d bes'> <e d>
+  | <e d> a g
+  | f4 fis2
+
+  % page 2, stave 12, measure 110
+  | g4 gis2
+  | a4 c b
+  | d d cis
+  | d2.
+  | d4 cis2
+  | c4 bes2
+  | bes4 a g
+  | fis4 f f
+  | e ees e
+
+  % page 3, stave 1, measure 119
+  | d d d
+  | d d cis
+
+  \autoBeamOn
+  \repeat unfold 8 { c32-"todo..." d e f g a bes c  c bes a g f e d c  c d e f g a bes c }
+  \autoBeamOff
+
+  \repeat unfold 7 f2.-"todo..."
   \key d \major
-  fis2.
+  fis2.-"todo..."
+
+  \autoBeamOn
 }
 
 ciacconaTwoB = {
+  \autoBeamOff
   \override NoteColumn #'force-hshift = #0
-  \repeat unfold 32 { c4 c c }
+
+  % page 2, stave 9, measure 89
+  | s4 d,,2
+  | d2 e4
+  | d2 d4
+
+  % page 2, stave 10, measure 92
+  | g,2 a4
+  | d a bes
+  | c bes a
+  | bes a g
+  | a2.
+  | d
+  | d
+  | d4 e f
+  | g4 a2
+
+  % page 2, stave 11, measure 101
+  | d,2.
+  | d
+  | d2 cis4
+  | d4 a2
+  | d4 d d
+  | g,2 a4
+  | bes2 bes4
+  | a4 a2
+  | d4 d2
+
+  % page 2, stave 12, measure 110
+  | d4 d e
+  | f fis g
+  | gis a2
+  | d,4 bes' a
+  | gis a g
+  | fis g f
+  | e f e
+  | d a bes
+  | c g a
+
+  % page 3, stave 1, measure 119
+  | bes bes a
+  | gis a2
   \repeat unfold 8 s2.
-  \repeat unfold 7 { c4 c c } { cis4 cis cis }
+  \repeat unfold 8 s2.
+
   \revert NoteColumn #'force-hshift
+  \autoBeamOn
 }
 
 ciacconaTwoC = {
+  \autoBeamOff
   \override NoteColumn #'force-hshift = #0
-  \repeat unfold 32 { g4 g g }
+
+  % page 2, stave 9, measure 89
+  | s4 f'2
+  | e2 cis'4
+  | d,2 a'4
+
+  % page 2, stave 10, measure 92
+  | bes8 a g f e e
+  | f2.
+  | fis
+  | g4 f e
+  | f e g
+  | f2.
+  | fis
+  | g4 cis d
+  | d d cis
+
+  % page 2, stave 11, measure 101
+  | d a bes
+  | c bes a
+  | bes a <a g>
+  | <a f> e2
+  | f4 a <a c>
+  | <g bes>2 f4
+  | f2 g4
+  | a4 <e cis'>2
+  | a4 <a d> c
+
+  % page 2, stave 12, measure 110
+  | bes b d
+  | c ees d
+  | f e2
+  | f2.
+  | e
+  | d
+  | cis4 d cis
+  | d <c a> <d g,>
+  | <g, c> g f
+
+  % page 3, stave 1, measure 119
+  | f g f
+  | e e2
   \repeat unfold 8 s2.
-  \repeat unfold 8 { g4 g g }
+  \repeat unfold 8 s2.
+
   \revert NoteColumn #'force-hshift
+  \autoBeamOn
 }
 
 ciacconaTwo = {
