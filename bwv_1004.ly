@@ -23,9 +23,6 @@
     \header {
       piece = "Ciaccona"
     }
-    \layout {
-      ragged-last = ##t
-    }
   }
 }
 

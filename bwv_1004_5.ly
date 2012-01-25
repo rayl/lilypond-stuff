@@ -13,14 +13,15 @@
 
 % --------------------- bars 1 through 88 ---------------------------
 
-ciacconaOneBreaks = {
+ciacconaOneBreaks =
+{
   s2 \noBreak \threeMeasures
   \repeat unfold 15 \fourMeasures
   \repeat unfold 12 \twoMeasures
 }
 
-ciacconaOneA = \relative c' {
-
+ciacconaOneA = \relative c'
+{
   % page 1, stave 1, measure 1
     a'4. a8
   | e'4 e4. e8
@@ -150,11 +151,10 @@ ciacconaOneA = \relative c' {
 
   % page 2, stave 9, measure 88
   | g32^( a bes a) g^( bes a g) bes^( a g bes) a^( g bes a) \clef treble g^([ f e d cis b a g)] \stemUp
-
 }
 
-ciacconaOneB = \relative c' {
-
+ciacconaOneB = \relative c'
+{
   % page 1, stave 1, measure 1
     <d f>2
   | <d g bes>4 <cis g' a>2
@@ -215,10 +215,10 @@ ciacconaOneB = \relative c' {
   | c8 s s2
   | bes8 s s2
   | s2.*20
-
 }
 
-ciacconaOne = {
+ciacconaOne =
+{
   \partial 2
   << \ciacconaOneA \\ \ciacconaOneB >>
 }
@@ -226,14 +226,15 @@ ciacconaOne = {
 
 % --------------------- bars 89 through 132 ---------------------------
 
-ciacconaTwoBreaks = {
-  \repeat unfold 4 \eightMeasures
+ciacconaTwoBreaks =
+{
+  \repeat unfold 8 \fourMeasures
   \repeat unfold 2 \twoMeasures
   \repeat unfold 2 \fourMeasures
 }
 
-ciacconaTwoA = \relative c' {
-
+ciacconaTwoA = \relative c'
+{
   % page 2, stave 9, measure 89
   | f32_( d) \stemDown a''( \stemUp d,,) f32_( d) \stemDown a'' \stemUp d,,
     \autoBeamOff
@@ -298,7 +299,8 @@ ciacconaTwoA = \relative c' {
     \autoBeamOn
 }
 
-ciacconaTwoB = \relative c' {
+ciacconaTwoB = \relative c'
+{
   \autoBeamOff
   \override NoteColumn #'force-hshift = #0
 
@@ -360,7 +362,8 @@ ciacconaTwoB = \relative c' {
   \autoBeamOn
 }
 
-ciacconaTwoC = \relative c' {
+ciacconaTwoC = \relative c'
+{
   \autoBeamOff
   \override NoteColumn #'force-hshift = #0
 
@@ -426,40 +429,102 @@ ciacconaTwo = << \ciacconaTwoA \\ \ciacconaTwoB \\ \ciacconaTwoC >>
 
 
 
-% --------------------- bars 132 through XX ---------------------------
+% --------------------- bars 133 through 184 ---------------------------
 
-ciacconaThreeBreaks = {
-  \fourMeasures
+ciacconaThreeBreaks =
+{
+  \repeat unfold 13 \fourMeasures
 }
 
-ciacconaThreeA = \relative c' {
+ciacconaThreeA = \relative c'
+{
   \key d \major
-  \fourMeasures
+  s2.*52
 }
 
-ciacconaThreeB = \relative c' {
-  \fourMeasures
+ciacconaThreeB = \relative c'
+{
+  s2.*52
 }
 
 ciacconaThree = << \ciacconaThreeA \\ \ciacconaThreeB >>
 
 
 
+% --------------------- bars 185 through 208 ---------------------------
+
+ciacconaFourBreaks =
+{
+  \repeat unfold 6 \fourMeasures
+}
+
+ciacconaFourA = \relative c'
+{
+  s2.*24
+}
+
+ciacconaFourB = \relative c'
+{
+  s2.*24
+}
+
+ciacconaFourC = \relative c'
+{
+  s2.*24
+}
+
+ciacconaFour = << \ciacconaFourA \\ \ciacconaFourB \\ \ciacconaFourC >>
+
+
+
+% --------------------- bars 209 through 256 ---------------------------
+
+ciacconaFiveBreaks =
+{
+  \repeat unfold 12 \fourMeasures
+}
+
+ciacconaFiveA = \relative c'
+{
+  \key d \minor
+  s2.*48
+}
+
+ciacconaFiveB = \relative c'
+{
+  s2.*48
+}
+
+ciacconaFiveC = \relative c'
+{
+  s2.*48
+}
+
+ciacconaFive = << \ciacconaFiveA \\ \ciacconaFiveB \\ \ciacconaFiveC >>
+
+
+
 % --------------------- complete piece ---------------------------
 
-ciaccona = {
+ciaccona =
+{
   \clef treble
   \key d \minor
   \time 3/4
   \ciacconaOne
   \ciacconaTwo
   \ciacconaThree
+  \ciacconaFour
+  \ciacconaFive
 }
 
-ciacconaBreaks = {
+ciacconaBreaks =
+{
   \time 3/4
   \ciacconaOneBreaks
   \ciacconaTwoBreaks
   \ciacconaThreeBreaks
+  \ciacconaFourBreaks
+  \ciacconaFiveBreaks
 }
 
