@@ -19,7 +19,7 @@ ciacconaOneBreaks = {
   \repeat unfold 12 \twoMeasures
 }
 
-ciacconaOneA = {
+ciacconaOneA = \relative c' {
 
   % page 1, stave 1, measure 1
     a'4. a8
@@ -61,7 +61,7 @@ ciacconaOneA = {
 
   % page 1, stave 6, measure 29
   | f a_( d f) \stemDown f^( e g f e d cis) d \stemUp
-  | g, bes fis g cis, e_( g) bes a g e' g,
+  | g, bes fis g cis, e_( g) bes \stemDown a g e' g, \stemUp
   | f cis d a bes d_( g) a \stemDown bes ees cis d
   | gis, b^( d) f e g cis, d \stemUp a,_( e' d') cis
 
@@ -153,7 +153,7 @@ ciacconaOneA = {
 
 }
 
-ciacconaOneB = {
+ciacconaOneB = \relative c' {
 
   % page 1, stave 1, measure 1
     <d f>2
@@ -204,8 +204,8 @@ ciacconaOneB = {
   | bes8 f bes,[ bes'] g16^( f g e)
 
   % page 2, stave 1, measure 60
-  | f16^( e) f^( d) <e a,>8 \noBeam d'16^([ b)] cis,8 s
-  | d'16^( cis d) a f^( e f) d bes g' d' bes'
+  | f16^( e) f^( d) <e a,>8 \noBeam d'16^([ b)] cis8 s
+  | d16^( cis d) a f^( e f) d bes g' d' bes'
   | c,16^( b c) g e^( d e) c a f' c' a'
   | f,^( ees) f^( d) d^( c) d^( bes) g e' b' g'
   | s2.
@@ -220,24 +220,24 @@ ciacconaOneB = {
 
 ciacconaOne = {
   \partial 2
-  \relative c'
   << \ciacconaOneA \\ \ciacconaOneB >>
 }
 
 
-% --------------------- bars 89 through 136 ---------------------------
+% --------------------- bars 89 through 132 ---------------------------
 
 ciacconaTwoBreaks = {
   \repeat unfold 4 \eightMeasures
-  \repeat unfold 4 \twoMeasures
-  \repeat unfold 1 \eightMeasures
+  \repeat unfold 2 \twoMeasures
+  \repeat unfold 2 \fourMeasures
 }
 
-ciacconaTwoA = {
+ciacconaTwoA = \relative c' {
 
   % page 2, stave 9, measure 89
   | f32_( d) \stemDown a''( \stemUp d,,) f32_( d) \stemDown a'' \stemUp d,,
-    \autoBeamOff a''2-"arpeggio"
+    \autoBeamOff
+    a''2-\markup { \italic "arpeggio" }
   | g2 g4
   | f2 f4
 
@@ -277,24 +277,33 @@ ciacconaTwoA = {
   % page 3, stave 1, measure 119
   | d d d
   | d d cis
+    \autoBeamOn
+  | d,8[ \stemDown f'32\( e d e] d[ c d c bes c bes a] bes[ c d e f16\) \stemUp d,]
+  | c8[ \stemDown e'32\( d c d] c[ bes c bes a bes a g] a[ bes c d ees16\) \stemUp c,]
+  | bes8[ \stemDown d'32\( c bes c] bes[ a bes a g a g f] g[ a bes c d16\) \stemUp bes,]
 
-  \autoBeamOn
-  \repeat unfold 8 { c32-"todo..." d e f g a bes c  c bes a g f e d c  c d e f g a bes c }
-  \autoBeamOff
+  % page 3, stave 2, measure 124
+  | a32_\([ a' b cis d16\) a,] g32_\([ a' b cis d16\) g,,] a32_\([ d' cis b cis16\) g]
+  | f16_\( e d cis d\) f g a bes a bes g
+    \autoBeamOff
+  | e'4 e4. e8
+  | f4 d4. d8
 
-  f2.*7-"todo..."
-  \key d \major
-  fis2.-"todo..."
-
-  \autoBeamOn
+  % page 3, stave 3, measure 128
+  | bes'4 a g
+  | g fis s8 f
+  | f4 e s8 ees
+  | ees4 d s8 d
+  | s d cis4. d8
+    \autoBeamOn
 }
 
-ciacconaTwoB = {
+ciacconaTwoB = \relative c' {
   \autoBeamOff
   \override NoteColumn #'force-hshift = #0
 
   % page 2, stave 9, measure 89
-  | s4 d,,2
+  | s4 d2
   | d2 e4
   | d2 d4
 
@@ -334,19 +343,29 @@ ciacconaTwoB = {
   % page 3, stave 1, measure 119
   | bes bes a
   | gis a2
-  | s2.*8
-  | s2.*8
+  | s2.*5
+
+  % page 3, stave 2, measure 126
+  | d4 cis2
+  | d4 bes2
+
+  % page 3, stave 3, measure 128
+  | g4 a a
+  | d d c8 s
+  | b4 c bes8 s
+  | a4 bes a8 s
+  | gis8 s a2
 
   \revert NoteColumn #'force-hshift
   \autoBeamOn
 }
 
-ciacconaTwoC = {
+ciacconaTwoC = \relative c' {
   \autoBeamOff
   \override NoteColumn #'force-hshift = #0
 
   % page 2, stave 9, measure 89
-  | s4 f'2
+  | s4 f2
   | e2 cis'4
   | d,2 a'4
 
@@ -386,35 +405,43 @@ ciacconaTwoC = {
   % page 3, stave 1, measure 119
   | f g f
   | e e2
-  | s2.*8
-  | s2.*8
+  | s2.*5
+
+  % page 3, stave 2, measure 126
+  | <g bes>4 <g a>2
+  | <f a>4 f2
+
+  % page 3, stave 3, measure 128
+  | <g d'>4 <f d'> <e cis'>
+  | <a d> <a c> s
+  | <g d'> <g c> s
+  | f f s
+  | s e2
 
   \revert NoteColumn #'force-hshift
   \autoBeamOn
 }
 
-ciacconaTwo = {
-  \relative c'
-  << \ciacconaTwoA \\ \ciacconaTwoB \\ \ciacconaTwoC >>
-}
+ciacconaTwo = << \ciacconaTwoA \\ \ciacconaTwoB \\ \ciacconaTwoC >>
 
 
 
-% --------------------- bars 136 through XX ---------------------------
+% --------------------- bars 132 through XX ---------------------------
 
 ciacconaThreeBreaks = {
+  \fourMeasures
 }
 
-ciacconaThreeA = {
+ciacconaThreeA = \relative c' {
+  \key d \major
+  \fourMeasures
 }
 
-ciacconaThreeB = {
+ciacconaThreeB = \relative c' {
+  \fourMeasures
 }
 
-ciacconaThree = {
-  \relative c'
-  << \ciacconaThreeA \\ \ciacconaThreeB >>
-}
+ciacconaThree = << \ciacconaThreeA \\ \ciacconaThreeB >>
 
 
 

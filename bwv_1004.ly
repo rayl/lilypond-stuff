@@ -12,7 +12,10 @@
 \book {
   \score {
     \new Staff
-      \with { printKeyCancellation = ##f }
+      \with {
+        printKeyCancellation = ##f
+        explicitKeySignatureVisibility = #end-of-line-invisible
+      }
       <<
         \new Voice \ciaccona
         \new Voice \ciacconaBreaks
