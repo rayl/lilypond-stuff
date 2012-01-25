@@ -439,12 +439,90 @@ ciacconaThreeBreaks =
 ciacconaThreeA = \relative c'
 {
   \key d \major
-  s2.*52
+
+  % page 3, stave 3, measure 133
+  | d'4 fis,4. g8
+  | e4 fis4._( g16 a)
+
+  % page 3, stave 4, measure 135
+  | d,4 e4._( fis16 g)
+  | fis8 e e4. a8
+  | s4 b8 a g fis
+  | e4 fis16_( g a g fis8) e
+  | d4 e8 g16 fis e8 d
+  | <g cis>8 <fis d'> e4. a8
+  | fis e d e fis gis
+
+  % page 3, stave 5, measure 142
+  | a b cis d b cis
+  | d fis e d cis b
+  | <fis a> <d b'> <e cis'> <fis d'> <g e'> <e cis'>
+  | d'4 <d fis>4. <d fis>8
+  | e4 a4. g8
+  | fis e g fis b a
+  | g fis d4 cis
+
+  % page 3, stave 6, measure 149
+  | d16 cis b a gis_( b d fis) e8 e
+  | cis,16 d cis b a_( cis e g) fis8 e'
+  | b,16 cis d b g_( b d fis) e8 d'
+  | cis16 b a b \stemDown cis^( e g b) a g fis e
+
+  % page 3, stave 7, measure 153
+  | fis a fis d a d a fis \stemUp d fis e d
+  | cis \stemDown a'' e cis \stemUp a cis a e cis e d cis
+  | 
+  | 
+  | 
+
+  % page 3, stave 8, measure 158
+  | 
+  | 
+  | 
+  | 
+  | 
+
+  % page 3, stave 9, measure 163
+  | 
+  | 
+  s2.*20
 }
 
 ciacconaThreeB = \relative c'
 {
-  s2.*52
+  % page 3, stave 3, measure 133
+  | d4 d2
+  | cis4 a2
+
+  % page 3, stave 4, measure 135
+  | b4 g2
+  | a4 cis2
+  | <d fis>4 <d fis>4. d8
+  | cis8 b a4. a8
+  | b8 a g4. g8
+  | a4 a2
+  | d4 d4. d8
+
+  % page 3, stave 5, measure 142
+  | <cis e>4 <a e'>4. <a g'>8
+  | <b fis'>4 <g g' b>4. <g g'>8
+  | a4 a4. a8
+  | <d fis>8 e d e fis g
+  | <a cis>8 b cis a b cis
+  | d cis b a <g d'> <fis b>
+  | <e cis'> <d d'> <a' e'>2
+
+  % page 3, stave 6, measure 149
+  | d,8 s s4 s8 <d gis b>
+  | <a' cis e>8 s s4 s8 <ais, fis' cis'>
+  | <fis' d'>8 s s4 s8 <gis, e'>
+  | <a e'> s s2
+
+  % page 3, stave 7, measure 153
+  | s2.*12
+
+  % page 3, stave 9, measure 165
+  s2.*20
 }
 
 ciacconaThree = << \ciacconaThreeA \\ \ciacconaThreeB >>
