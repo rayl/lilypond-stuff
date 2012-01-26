@@ -471,21 +471,48 @@ ciacconaThreeA = \relative c'
   % page 3, stave 7, measure 153
   | fis a fis d a d a fis \stemUp d fis e d
   | cis \stemDown a'' e cis \stemUp a cis a e cis e d cis
-  | 
-  | 
-  | 
+  | b \stemDown gis'' d b \stemUp gis b gis e b d cis b
+  | a b cis d e cis a cis e g fis e
+  | fis d a d fis d a' fis \stemDown d' a fis' d
 
   % page 3, stave 8, measure 158
-  | 
-  | 
-  | 
-  | 
-  | 
+  | a' e cis e a e cis' a e' cis fis cis
+  | d fis d b fis b d, fis b, d cis b
+  | cis e cis a \stemUp e a cis, e a, cis e g
+  | fis d \stemDown a'' a a fis d a \stemUp fis d a d
+  | e cis \stemDown a'' a a e cis a \stemUp e cis a cis
 
   % page 3, stave 9, measure 163
-  | 
-  | 
-  s2.*20
+  | d b \stemDown a'' a a fis d b d gis b gis
+  | a e a a a cis, e e e a, cis g \stemUp
+  | fis16 d a' a a fis d fis \stemDown a d fis \stemUp b,,
+  | cis e a a a e cis e \stemDown a cis e \stemUp a,,
+
+  % page 3, stave 10, measure 167
+  | b d a' a a d, b d gis b d e,
+  | a, e' a a a e a cis \stemDown e cis a g \stemUp
+  | fis a, a a a a''[ a fis] fis d d fis
+  | e a,,[ a a] a a''[ a e] e cis cis e
+
+  % page 3, stave 11, measure 171
+  | d a,[ a a] a b''[ b gis] gis e e gis
+  | a a,,[ a a] a a''[ a a] a g g g
+  | fis d,[ d d] d a'[ a a] b b cis cis
+  | d d,[ d d] d d''[ d d] d c c c
+
+  % page 3, stave 12, measure 175
+  | b d,,[ d d] d b''[ b b] cis d d d
+  | g, g g g fis fis fis fis e e e e
+  | fis4 fis4. fis8
+  | fis_( e) e4.^( e8)
+  | e_( cis) c4. c8
+
+  % page 4, stave 1, measure 180
+  | c b cis <a b'> <b a'> <cis g'>
+  | <d fis>4 <d fis>4. <d fis>8
+  | <d e>4 <cis e>4. <cis e>8
+  | <c a'> <d fis> <cis b'> <c a'> <b g'> <a fis'>
+  | e' d cis4. d8
 }
 
 ciacconaThreeB = \relative c'
@@ -522,7 +549,34 @@ ciacconaThreeB = \relative c'
   | s2.*12
 
   % page 3, stave 9, measure 165
-  s2.*20
+  | s8 a'16 a a s s8 s4
+  | s8 a16 a a s s8 s4
+
+  % page 3, stave 10, measure 167
+  | s8 a16 a a s s8 s4
+  | s8 a16 a a s s8 s4
+  | s4 s8 s16 d d a a d
+  | cis s s8 s8 s16 cis cis a a cis
+
+  % page 3, stave 11, measure 171
+  | g s s8 s8 s16 b b d d d
+  | cis s s8 s16 a16 a a b b cis cis
+  | d d,[ d d] d a'[ a a] a g g g
+  | fis d[ d d] d d'[ d d] e e fis fis
+
+  % page 3, stave 12, measure 175
+  | g d,[ d d] d g'[ g g] g fis fis fis
+  | fis e e e e <d fis,> <d fis,> <d fis,> <d g,> <cis a> <cis a> <cis a>
+  | <d d,>4 d4. d8
+  | d4 d8 cis b ais
+  | b4 b8 a g fis
+
+  % page 4, stave 1, measure 180
+  | g4 s8 g8 fis e
+  | d fis b a g fis
+  | g e a g fis e
+  | fis d <g g,> s s s
+  | g fis <e a,>2
 }
 
 ciacconaThree = << \ciacconaThreeA \\ \ciacconaThreeB >>
