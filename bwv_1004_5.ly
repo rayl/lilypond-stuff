@@ -67,10 +67,10 @@ ciacconaOneA = \relative c'
   | gis, b^( d) f e g cis, d \stemUp a,_( e' d') cis
 
   % page 1, stave 7, measure 33
-  | \stemDown d8 f bes a gis \stemUp d,
-  | cis \stemDown e' a g fis \stemUp c,
-  | b \stemDown d' g f e \stemUp bes,
-  | bes16 \stemDown f'' e d \stemUp cis8[ a] e' g,
+  | \stemDown d8[ f bes a gis] \stemUp d,
+  | cis \stemDown e'[ a g fis] \stemUp c,
+  | b \stemDown d'[ g f e] \stemUp bes,
+  | bes16 \stemDown f''[ e d] \stemUp cis8[ a] e' g,
   | f16 d f a \stemDown d^( f bes) a gis b g e
   | cis^( e a) g fis a fis b, \stemUp a fis d c
 
@@ -81,26 +81,26 @@ ciacconaOneA = \relative c'
   | a_( e' d') cis d,_( fis a) c \stemDown c bes c bes \stemUp
 
   % page 1, stave 9, measure 43
-  | bes g f ees d c bes a g^( \stemDown g' ees') d
+  | bes g f ees d c bes a g^( \stemDown g'[ ees') d]
   | cis e a, g f d' e, d \stemUp a_( e' d') cis
   | \stemDown g'^( e f) cis \stemUp d_( c bes a g f e d)
-  | cis bes' a g fis d a' d, c bes c a
+  | cis bes'[ a g] fis d a' d, c bes c a
 
   % page 1, stave 10, measure 47
   | bes_( g a bes c d e fis g a bes) a
   | gis a e f g cis,_( d) gis,_( a) f' e cis
-  | d d' a_( g f e d c bes) \stemDown d' g, f \stemUp
-  | e c' g_( f e d c bes a) \stemDown c' f, ees \stemUp
+  | d d'[ a_( g] f e d c bes) \stemDown d'[ g, f] \stemUp
+  | e c'[ g_( f] e d c bes a) \stemDown c'[ f, ees] \stemUp
 
   % page 1, stave 11, measure 51
-  | d bes' g_( ees d c bes a g) \stemDown bes' e, d \stemUp
+  | d bes'[ g_( ees] d c bes a g) \stemDown bes'[ e, d] \stemUp
   | cis a c e a e a cis e g, a e
   | f d f a \stemDown d a d f bes, g'^( a bes)
-  | e, \stemUp c, e g \stemDown c g c e a, f'^( g a)
-  | d, \stemUp bes, d f bes f bes d \stemDown g, e'^( f g)
+  | e, \stemUp c,[ e g] \stemDown c g c e a, f'^( g a)
+  | d, \stemUp bes,[ d f] bes f bes d \stemDown g, e'^( f g)
 
   % page 1, stave 12, measure 56
-  | cis, a cis e a e a cis e g,^( f e) \stemUp
+  | cis, a[ cis e] a e a cis e g,^( f e) \stemUp
   | f8 s s f g \noBeam s
   | e s s e f \noBeam s
   | d s s d e \noBeam s
@@ -113,24 +113,24 @@ ciacconaOneA = \relative c'
   | a,16 e' cis' g' a,, f' d' f a,, g' cis e
 
   % page 2, stave 2, measure 65
-  | d16_([ a32 g f16) e] d c bes a bes[ \stemDown d'32^( c bes a g f)] \stemUp
-  | e16_([ g32 f e16) d] c bes a g a[ \stemDown c'32^( bes a g f ees)] \stemUp
-  | d16[ f32_( ees) d16 c] bes[ d32 c bes16 a] g[ \stemDown bes'32^( a g f e d)] \stemUp
+  | d16_([ a32 g f16) e] d c bes a bes \stemDown d'32^([ c bes a g f)] \stemUp
+  | e16 g32_([ f e16) d] c bes a g a \stemDown c'32^([ bes a g f ees)] \stemUp
+  | d16 f32_([ ees) d16 c] bes d32[ c bes16 a] g \stemDown bes'32^([ a g f e d)] \stemUp
 
   % page 2, stave 3, measure 68
-  | cis32_([ b a b cis d e f)] \stemDown g^([ a bes a g f e d)] \stemUp cis16[ \stemDown e'32^( d cis b a g)] \stemUp
-  | f16_([ d32 e f16) a] f d f a \stemDown bes32^\([ c d e f g a bes] \stemUp
-  | \stemDown e,16\)[ \stemUp c,32_( d e16 g)] e c e g \stemDown a32^\([ bes c d e f g a] \stemUp
+  | cis32_( b a b cis d e f)] \stemDown g^([ a bes a g f e d)] \stemUp cis16 \stemDown e'32^([ d cis b a g)] \stemUp
+  | f16_( d32[ e f16) a] f d f a \stemDown bes32^\([ c d e f g a bes] \stemUp
+  | \stemDown e,16\) \stemUp c,32_([ d e16 g)] e c e g \stemDown a32^\([ bes c d e f g a] \stemUp
 
   % page 2, stave 4, measure 71
-  | \stemDown d,16\)[ \stemUp bes,32_( c d16) f] d bes d f \stemDown g32^\([ a bes c d e f g\)] \stemUp
-  | \stemDown cis,32^([ bes' a g f e d c)] \stemUp bes_([ a g f e d cis b)] a_([ b cis d e f g e)]
-  | f32[ d e f g a b cis] \stemDown d[ b cis d e f g a] bes16[ \stemUp d,, c \trill bes]
+  | \stemDown d,16\) \stemUp bes,32_([ c d16) f] d bes d f \stemDown g32^\([ a bes c d e f g\)]
+  | cis,32^( bes'[ a g f e d c)] \stemUp bes_([ a g f e d cis b)] a_([ b cis d e f g e)]
+  | f32[ d e f g a b cis] d \stemDown b[ cis d e f g a] bes16 \stemUp d,,[ c \trill bes]
 
   % page 2, stave 5, measure 74
-  | c32[ d e fis g a bes c] \stemDown d[ a bes c d e fis g] a16[ \stemUp c,, bes a]
-  | bes32[ d e fis g a bes c] \stemDown d[ g, a bes c d e fis] g[ a bes a g f e d]
-  | cis32[ a' g f e d cis b] a[ b cis d e f g a] bes[ g e cis a g f e] \stemUp
+  | c32[ d e fis g a bes c] d \stemDown a[ bes c d e fis g] a16 \stemUp c,,[ bes a]
+  | bes32[ d e fis g a bes c] d \stemDown g,[ a bes c d e fis] g[ a bes a g f e d]
+  | cis32 a'[ g f e d cis b] a[ b cis d e f g a] bes[ g e cis a g f e] \stemUp
 
   % page 2, stave 6, measure 77
   | d16 a' d e \stemDown f d bes a \stemUp gis_( b d) f
@@ -139,10 +139,10 @@ ciacconaOneA = \relative c'
   | a,16 d f a \stemDown d a f d \stemUp a e' g cis
 
   % page 2, stave 7, measure 81
-  | d,16( \stemDown bes'') bes( gis) gis( f) f( d) d b gis e \stemUp
-  | cis16( \stemDown a'') a( fis) fis( ees) ees( c) c a fis d \stemUp
-  | b16( \stemDown g'') g( ees) ees( cis) cis( bes) bes g e cis \stemUp
-  | a16_( cis) cis_( e) e_([ g32 f) g16_( bes32 a)] \stemDown bes16^([ cis32 d e16) g,] \stemUp
+  | d,16( \stemDown bes'')[ bes( gis) gis(] f) f( d) d b gis e \stemUp
+  | cis16( \stemDown a'')[ a( fis) fis(] ees) ees( c) c a fis d \stemUp
+  | b16( \stemDown g'')[ g( ees)] ees( cis) cis( bes) bes g e cis \stemUp
+  | a16_( cis) cis_( e) e_([ g32 f)] g16_([ bes32 a)] \stemDown bes16^([ cis32 d] e16) g,] \stemUp
 
   % page 2, stave 8, measure 85
   | f32_( a b cis) \stemDown d^( cis b a) \clef "treble^8" \stemUp f'_( e d cis) d_( e f g) a_( g f e) bes'_( a g f)
@@ -199,9 +199,9 @@ ciacconaOneB = \relative c'
 
   % page 1, stave 12, measure 56
   | s2.
-  | d'8 a d,[ d'] bes16^( a bes) g
-  | c8 g c,[ c'] a16 g a f
-  | bes8 f bes,[ bes'] g16^( f g e)
+  | d'8[ a d,] d' bes16^( a bes) g
+  | c8[ g c,] c' a16 g a f
+  | bes8[ f bes,] bes' g16^( f g e)
 
   % page 2, stave 1, measure 60
   | f16^( e) f^( d) <e a,>8 \noBeam d'16^([ b)] cis8 s
@@ -279,12 +279,12 @@ ciacconaTwoA = \relative c'
   | d d d
   | d d cis
     \autoBeamOn
-  | d,8[ \stemDown f'32\( e d e] d[ c d c bes c bes a] bes[ c d e f16\) \stemUp d,]
-  | c8[ \stemDown e'32\( d c d] c[ bes c bes a bes a g] a[ bes c d ees16\) \stemUp c,]
-  | bes8[ \stemDown d'32\( c bes c] bes[ a bes a g a g f] g[ a bes c d16\) \stemUp bes,]
+  | d,8 \stemDown f'32\([ e d e] d[ c d c bes c bes a] bes[ c d e f16\)] \stemUp d,
+  | c8 \stemDown e'32\([ d c d] c[ bes c bes a bes a g] a[ bes c d ees16\)] \stemUp c,
+  | bes8 \stemDown d'32\([ c bes c] bes[ a bes a g a g f] g[ a bes c d16\)] \stemUp bes,
 
   % page 3, stave 2, measure 124
-  | a32_\([ a' b cis d16\) a,] g32_\([ a' b cis d16\) g,,] a32_\([ d' cis b cis16\) g]
+  | a32_\( a'[ b cis d16\)] a, g32_\( a'[ b cis d16\)] g,, a32_\( d'[ cis b cis16\)] g
   | f16_\( e d cis d\) f g a bes a bes g
     \autoBeamOff
   | e'4 e4. e8
@@ -451,27 +451,27 @@ ciacconaThreeA = \relative c'
   | e4 fis16_( g a g fis8) e
   | d4 e8 g16 fis e8 d
   | <g cis>8 <fis d'> e4. a8
-  | fis e d e fis gis
+  | fis[ e] d e fis gis
 
   % page 3, stave 5, measure 142
-  | a b cis d b cis
-  | d fis e d cis b
-  | <fis a> <d b'> <e cis'> <fis d'> <g e'> <e cis'>
+  | a[ b] cis d b cis
+  | d[ fis] e d cis b
+  | <fis a>[ <d b'>] <e cis'> <fis d'> <g e'> <e cis'>
   | d'4 <d fis>4. <d fis>8
   | e4 a4. g8
-  | fis e g fis b a
+  | fis e g[ fis] b a
   | g fis d4 cis
 
   % page 3, stave 6, measure 149
-  | d16 cis b a gis_( b d fis) e8 e
-  | cis,16 d cis b a_( cis e g) fis8 e'
-  | b,16 cis d b g_( b d fis) e8 d'
+  | d16 cis b a gis_( b d fis) e8 \noBeam e
+  | cis,16 d cis b a_( cis e g) fis8 \noBeam e'
+  | b,16 cis d b g_( b d fis) e8 \noBeam d'
   | cis16 b a b \stemDown cis^( e g b) a g fis e
 
   % page 3, stave 7, measure 153
-  | fis a fis d a d a fis \stemUp d fis e d
-  | cis \stemDown a'' e cis \stemUp a cis a e cis e d cis
-  | b \stemDown gis'' d b \stemUp gis b gis e b d cis b
+  | fis a[ fis d] a d[ a fis] d \stemUp fis[ e d]
+  | cis \stemDown a''[ e cis] a \stemUp cis[ a e] cis e[ d cis]
+  | b \stemDown gis''[ d b] gis \stemUp b[ gis e] b d[ cis b]
   | a b cis d e cis a cis e g fis e
   | fis d a d fis d a' fis \stemDown d' a fis' d
 
@@ -479,39 +479,39 @@ ciacconaThreeA = \relative c'
   | a' e cis e a e cis' a e' cis fis cis
   | d fis d b fis b d, fis b, d cis b
   | cis e cis a \stemUp e a cis, e a, cis e g
-  | fis d \stemDown a'' a a fis d a \stemUp fis d a d
-  | e cis \stemDown a'' a a e cis a \stemUp e cis a cis
+  | fis d \stemDown a''[ a] a[ fis d a] \stemUp fis[ d a] d
+  | e cis \stemDown a''[ a] a[ e cis a] \stemUp e[ cis a] cis
 
   % page 3, stave 9, measure 163
-  | d b \stemDown a'' a a fis d b d gis b gis
-  | a e a a a cis, e e e a, cis g \stemUp
-  | fis16 d a' a a fis d fis \stemDown a d fis \stemUp b,,
-  | cis e a a a e cis e \stemDown a cis e \stemUp a,,
+  | d b \stemDown a''[ a] a[ fis d b] d[ gis b] gis
+  | a e a[ a] a[ cis, e e] e a, cis g \stemUp
+  | fis16 d a' a a fis d fis \stemDown a[ d fis] \stemUp b,,
+  | cis e a a a e cis e \stemDown a[ cis e] \stemUp a,,
 
   % page 3, stave 10, measure 167
-  | b d a' a a d, b d gis b d e,
-  | a, e' a a a e a cis \stemDown e cis a g \stemUp
-  | fis a, a a a a''[ a fis] fis d d fis
-  | e a,,[ a a] a a''[ a e] e cis cis e
+  | b d a' a a d, b d gis[ b d] e,
+  | a, e' a a a e a cis \stemDown e[ cis a] g \stemUp
+  | fis a,[ a a] a a''[ a] fis fis d d fis
+  | e a,,[ a a] a a''[ a] e e cis cis e
 
   % page 3, stave 11, measure 171
-  | d a,[ a a] a b''[ b gis] gis e e gis
+  | d a,[ a a] a b''[ b] gis gis e e gis
   | a a,,[ a a] a a''[ a a] a g g g
-  | fis d,[ d d] d a'[ a a] b b cis cis
-  | d d,[ d d] d d''[ d d] d c c c
+  | fis d,[ d d] d a'[ a a] b b[ cis cis]
+  | d d,[ d d] d d''[ d d] d c[ c c]
 
   % page 3, stave 12, measure 175
-  | b d,,[ d d] d b''[ b b] cis d d d
-  | g, g g g fis fis fis fis e e e e
+  | b d,,[ d d] d b''[ b b] cis d[ d d]
+  | g, g[ g g] fis fis[ fis fis] e e[ e e]
   | fis4 fis4. fis8
   | fis_( e) e4.^( e8)
   | e_( cis) c4. c8
 
   % page 4, stave 1, measure 180
-  | c b cis <a b'> <b a'> <cis g'>
+  | c[ b cis] <a b'> <b a'> <cis g'>
   | <d fis>4 <d fis>4. <d fis>8
   | <d e>4 <cis e>4. <cis e>8
-  | <c a'> <d fis> <cis b'> <c a'> <b g'> <a fis'>
+  | <c a'>[ <d fis>] <cis b'> <c a'> <b g'> <a fis'>
   | e' d cis4. d8
 }
 
@@ -534,9 +534,9 @@ ciacconaThreeB = \relative c'
   | <cis e>4 <a e'>4. <a g'>8
   | <b fis'>4 <g g' b>4. <g g'>8
   | a4 a4. a8
-  | <d fis>8 e d e fis g
-  | <a cis>8 b cis a b cis
-  | d cis b a <g d'> <fis b>
+  | <d fis>8[ e] d e fis g
+  | <a cis>8[ b] cis a b cis
+  | d cis b[ a] <g d'> <fis b>
   | <e cis'> <d d'> <a' e'>2
 
   % page 3, stave 6, measure 149
@@ -561,21 +561,21 @@ ciacconaThreeB = \relative c'
   % page 3, stave 11, measure 171
   | g s s8 s8 s16 b b d d d
   | cis s s8 s16 a16 a a b b cis cis
-  | d d,[ d d] d a'[ a a] a g g g
-  | fis d[ d d] d d'[ d d] e e fis fis
+  | d d,[ d d] d a'[ a a] a g[ g g]
+  | fis d[ d d] d d'[ d d] e e[ fis fis]
 
   % page 3, stave 12, measure 175
-  | g d,[ d d] d g'[ g g] g fis fis fis
-  | fis e e e e <d fis,> <d fis,> <d fis,> <d g,> <cis a> <cis a> <cis a>
+  | g d,[ d d] d g'[ g g] g fis[ fis fis]
+  | fis e[ e e] e <d fis,>[ <d fis,> <d fis,>] <d g,> <cis a>[ <cis a> <cis a>]
   | <d d,>4 d4. d8
   | d4 d8 cis b ais
   | b4 b8 a g fis
 
   % page 4, stave 1, measure 180
   | g4 s8 g8 fis e
-  | d fis b a g fis
-  | g e a g fis e
-  | fis d <g g,> s s s
+  | d[ fis] b a g fis
+  | g[ e] a g fis e
+  | fis[ d] <g g,> s s s
   | g fis <e a,>2
 }
 
