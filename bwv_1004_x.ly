@@ -21,3 +21,5 @@ twoMeasures   = { \repeat unfold 1 \bar \brk }
 threeMeasures = { \repeat unfold 2 \bar \brk }
 fourMeasures  = { \repeat unfold 3 \bar \brk }
 
+\pointAndClickOff
+
