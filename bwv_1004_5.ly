@@ -10,6 +10,7 @@
 
 \version "2.12.3"
 
+x = \once \override NoteColumn #'force-hshift = #0.70
 
 % --------------------- bars 1 through 88 ---------------------------
 
@@ -34,14 +35,14 @@ ciacconaOneA = \relative c'
   % page 1, stave 2, measure 8
   | bes'4 a8. g32 f g8. e16
   | d,8. e16 f8. g32 a bes8. a16
-  | g8. f16 g8. bes16 a8. g16
-  | f8. e16 <f d'>8. <a f'>16 <g e'>8. <f d'>16
-  | e8. d16 e8. g16 f8. e16
-  | d8. e16 f8. g32 a bes8. a16
+  | \x g8. f16 \x g8. bes16 a8. g16
+  | \x f8. e16 <f d'>8. <a f'>16 <g e'>8. <f d'>16
+  | \x e8. d16 \x e8. g16 f8. e16
+  | \x d8. e16 f8. g32 a bes8. a16
 
   % page 1, stave 3, measure 14
-  | g8. f16 g8. bes16 a8. g16
-  | f8. e16 <f d'>8. <a f'>16 <g e'>8. <e cis'>16
+  | \x g8. f16 \x g8. bes16 a8. g16
+  | \x f8. e16 <f d'>8. <a f'>16 <g e'>8. <e cis'>16
   | <f d'>8. <g e'>16 d'4_(  cis8.) d16
   | d8. e16 f8. g32 a bes8. f16
   | e8. bes'16 a8. g16 a8. fis16
@@ -67,10 +68,10 @@ ciacconaOneA = \relative c'
   | gis, b^( d) f e g cis, d \stemUp a,_( e' d') cis
 
   % page 1, stave 7, measure 33
-  | \stemDown d8[ f bes a gis] \stemUp d,
+  | d8 \stemDown f[ bes a gis] \stemUp d,
   | cis \stemDown e'[ a g fis] \stemUp c,
   | b \stemDown d'[ g f e] \stemUp bes,
-  | bes16 \stemDown f''[ e d] \stemUp cis8[ a] e' g,
+  | bes16 \stemDown f''[ e d] \stemUp cis8 a e' g,
   | f16 d f a \stemDown d^( f bes) a gis b g e
   | cis^( e a) g fis a fis b, \stemUp a fis d c
 
@@ -81,7 +82,7 @@ ciacconaOneA = \relative c'
   | a_( e' d') cis d,_( fis a) c \stemDown c bes c bes \stemUp
 
   % page 1, stave 9, measure 43
-  | bes g f ees d c bes a g^( \stemDown g'[ ees') d]
+  | bes g f ees d c bes a g_([ g' ees') d]
   | cis e a, g f d' e, d \stemUp a_( e' d') cis
   | \stemDown g'^( e f) cis \stemUp d_( c bes a g f e d)
   | cis bes'[ a g] fis d a' d, c bes c a
@@ -94,10 +95,10 @@ ciacconaOneA = \relative c'
 
   % page 1, stave 11, measure 51
   | d bes'[ g_( ees] d c bes a g) \stemDown bes'[ e, d] \stemUp
-  | cis a c e a e a cis e g, a e
-  | f d f a \stemDown d a d f bes, g'^( a bes)
+  | cis a[ c e] a e[ a cis] e g,[ a e]
+  | f d[ f a] \stemDown d a d f bes, g'^( a bes)
   | e, \stemUp c,[ e g] \stemDown c g c e a, f'^( g a)
-  | d, \stemUp bes,[ d f] bes f bes d \stemDown g, e'^( f g)
+  | d, \stemUp bes,[ d f] \stemDown bes f bes d g, e'^( f g)
 
   % page 1, stave 12, measure 56
   | cis, a[ cis e] a e a cis e g,^( f e) \stemUp
@@ -169,7 +170,7 @@ ciacconaOneB = \relative c'
   | \once \override Stem #'length = #15.5 <d' f>8. s16 s2
   | <d, bes' e>8 s <cis a' e'> s s4
   | <d a' e'>8 s bes s s s16 g
-  | <a d'>8 s \once \override Stem #'length = #13 cis' s s s16 \once \override NoteColumn #'force-hshift = #1.40 <a, cis' a'>
+  | <a d'>8 s \once \override Stem #'length = #13 cis' s s s16 \once \override NoteColumn #'force-hshift = #1.55 <a, cis' a'>
   | <d d' f>8 s s2
 
   % page 1, stave 3, measure 14
@@ -306,7 +307,7 @@ ciacconaTwoB = \relative c'
 
   % page 2, stave 9, measure 89
   | s4 d2
-  | d2 e4
+  | \once \override NoteColumn #'force-hshift = #0.70 d2 e4
   | d2 d4
 
   % page 2, stave 10, measure 92
@@ -381,7 +382,7 @@ ciacconaTwoC = \relative c'
   | f2.
   | fis
   | g4 cis d
-  | d d cis
+  | d \once \override NoteColumn #'force-hshift = #0.70 d cis
 
   % page 2, stave 11, measure 101
   | d a bes
@@ -464,8 +465,8 @@ ciacconaThreeA = \relative c'
 
   % page 3, stave 6, measure 149
   | d16 cis b a gis_( b d fis) e8 \noBeam e
-  | cis,16 d cis b a_( cis e g) fis8 \noBeam e'
-  | b,16 cis d b g_( b d fis) e8 \noBeam d'
+  | \once \override NoteColumn #'force-hshift = #0.70 cis,16 d cis b a_( cis e g) fis8 \noBeam e'
+  | \once \override NoteColumn #'force-hshift = #0.70 b,16 cis d b g_( b d fis) e8 \noBeam d'
   | cis16 b a b \stemDown cis^( e g b) a g fis e
 
   % page 3, stave 7, measure 153
@@ -479,11 +480,11 @@ ciacconaThreeA = \relative c'
   | a' e cis e a e cis' a e' cis fis cis
   | d fis d b fis b d, fis b, d cis b
   | cis e cis a \stemUp e a cis, e a, cis e g
-  | fis d \stemDown a''[ a] a[ fis d a] \stemUp fis[ d a] d
-  | e cis \stemDown a''[ a] a[ e cis a] \stemUp e[ cis a] cis
+  | fis d \stemDown a''[ a] a[ fis d a] \stemUp fis d a d
+  | e cis \stemDown a''[ a] a[ e cis a] \stemUp e cis a cis
 
   % page 3, stave 9, measure 163
-  | d b \stemDown a''[ a] a[ fis d b] d[ gis b] gis
+  | d b \stemDown a''[ a] a[ fis d b] d gis b gis
   | a e a[ a] a[ cis, e e] e a, cis g \stemUp
   | fis16 d a' a a fis d fis \stemDown a[ d fis] \stemUp b,,
   | cis e a a a e cis e \stemDown a[ cis e] \stemUp a,,
@@ -528,7 +529,7 @@ ciacconaThreeB = \relative c'
   | cis8 b a4. a8
   | b8 a g4. g8
   | a4 a2
-  | d4 d4. d8
+  | d4 \once \override NoteColumn #'force-hshift = #0.35 d4. d8
 
   % page 3, stave 5, measure 142
   | <cis e>4 <a e'>4. <a g'>8
