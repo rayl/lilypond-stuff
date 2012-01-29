@@ -593,17 +593,127 @@ ciacconaFourBreaks =
 
 ciacconaFourA = \relative c'
 {
-  s2.*24
+  \autoBeamOff
+  \override NoteColumn #'force-hshift = #0
+
+  % page 4, stave 1, measure 185
+  | d'4 a4. a8
+  | a4 a4. a8
+
+  % page 4, stave 2, measure 187
+  | b4 b4. b8
+  | cis8 d d4. cis8
+  | d4 fis4. fis8
+  | fis4 fis4. fis8
+  | fis4 e4. e8
+  | e8 d d4. cis8
+  | d4 fis4. fis8
+  | g4 a4. a8
+
+  % page 4, stave 3, measure 195
+  | b4 b4. b8
+  | cis8 d d4 cis
+  | d4 d4. d8
+  | cis4 cis4. cis8
+  | b4 e,4. e8
+  | e fis g b a g
+  | fis4 fis fis
+
+  % page 4, stave 4, measure 202
+  | fis fis fis
+  | e a cis,
+  | b' e,8 fis g4
+  | g fis fis
+  | fis e e
+  | e e e
+  | d8 b' cis,4. d8
+
+  \revert NoteColumn #'force-hshift
+  \autoBeamOn
 }
 
 ciacconaFourB = \relative c'
 {
-  s2.*24
+  \autoBeamOff
+  \override NoteColumn #'force-hshift = #0
+
+  % page 4, stave 1, measure 185
+  | a4 d4. d8
+  | c4 c2
+
+  % page 4, stave 2, measure 187
+  | b4 e2
+  | a,4 s2
+  | d4 d4. d8
+    \override NoteColumn #'force-hshift = #-1
+  | c4 c4. c8
+    \override NoteColumn #'force-hshift = #0
+  | b4 cis4. cis8
+  | d4 a s
+  | fis'8 e d4. d8
+  | e4 fis4. fis8
+
+  % page 4, stave 3, measure 195
+  | g4 gis4. gis8
+  | a4 a2
+  | d,4 d4. d8
+  | a'4 d,4. d8
+  | g4 gis4. gis8
+  | a4 a,4. a8
+  | d4 d cis
+
+  % page 4, stave 4, measure 202
+  | b4 b a
+  | g g g
+  | gis a a
+  | d d d
+  | g, g gis
+  | a a ais
+  | b8 g a2
+
+  \revert NoteColumn #'force-hshift
+  \autoBeamOn
 }
 
 ciacconaFourC = \relative c'
 {
-  s2.*24
+  \autoBeamOff
+  \override NoteColumn #'force-hshift = #0
+
+  % page 4, stave 1, measure 185
+  | fis4 fis4. fis8
+  | fis4 fis4. fis8
+
+  % page 4, stave 2, measure 187
+  | g4 g4. g8
+  | g8 fis e d e4
+  | s4 <a d>4. <a d>8
+  | <d, a'>4 <d a'>4. <d a'>8
+  | <g d'>4 <fis a>4. <g a>8
+  | <fis a>4 e8 fis g4
+  | s4 d'4. d8
+  | d4 d4. d8
+
+  % page 4, stave 3, measure 195
+  | d4 e4. e8
+  | e8 fis e2
+  | fis4 fis4. fis8
+  | e4 fis4. fis8
+  | g8 \override NoteColumn #'force-hshift = #-1 d d4. d8 
+  | d4 \override NoteColumn #'force-hshift = #0 <cis e,>4. <cis e,>8
+  | d4 a a
+
+  % page 4, stave 4, measure 202
+  | <d, b'>4 <d b'> <d b'>
+  | <d b'> <e cis'> <e cis'>
+  | <e d'> <e d'> <e cis'>
+  | <d d'> a'8 b <d, c'>4
+  | <d b'> b'8 cis <d, d'>4
+  | <e d'>4 e8 fis <g cis>4
+  | fis8 e e2
+
+  \revert NoteColumn #'force-hshift
+  \autoBeamOn
 }
 
 ciacconaFour = << \ciacconaFourA \\ \ciacconaFourB \\ \ciacconaFourC >>
