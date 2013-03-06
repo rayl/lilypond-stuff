@@ -728,33 +728,147 @@ ciacconaFiveBreaks =
 ciacconaFiveA = \relative c'
 {
   % page 4, stave 5, measure 209
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 4, stave 6, measure 215
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 4, stave 7, measure 220
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 4, stave 8, measure 225
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 4, stave 9, measure 229
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 4, stave 10, measure 233
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 4, stave 11, measure 238
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 4, stave 12, measure 242
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 5, stave 1, measure 245
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 5, stave 2, measure 248
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 5, stave 3, measure 251
-  s2.*48
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
 }
 
 ciacconaFiveB = \relative c'
 {
   % page 4, stave 5, measure 209
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 4, stave 6, measure 215
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 4, stave 7, measure 220
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 4, stave 8, measure 225
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 4, stave 9, measure 229
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 4, stave 10, measure 233
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 4, stave 11, measure 238
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 4, stave 12, measure 242
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 5, stave 1, measure 245
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 5, stave 2, measure 248
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
   % page 5, stave 3, measure 251
-  s2.*48
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
 }
 
 ciacconaFive = << \ciacconaFiveA \\ \ciacconaFiveB >>
