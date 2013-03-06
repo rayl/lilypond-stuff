@@ -757,23 +757,7 @@ ciacconaFiveB = \relative c'
   s2.*48
 }
 
-ciacconaFiveC = \relative c'
-{
-  % page 4, stave 5, measure 209
-  % page 4, stave 6, measure 215
-  % page 4, stave 7, measure 220
-  % page 4, stave 8, measure 225
-  % page 4, stave 9, measure 229
-  % page 4, stave 10, measure 233
-  % page 4, stave 11, measure 238
-  % page 4, stave 12, measure 242
-  % page 5, stave 1, measure 245
-  % page 5, stave 2, measure 248
-  % page 5, stave 3, measure 251
-  s2.*48
-}
-
-ciacconaFive = << \ciacconaFiveA \\ \ciacconaFiveB \\ \ciacconaFiveC >>
+ciacconaFive = << \ciacconaFiveA \\ \ciacconaFiveB >>
 
 
 
