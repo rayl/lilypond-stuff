@@ -439,8 +439,6 @@ ciacconaThreeBreaks =
 
 ciacconaThreeA = \relative c'
 {
-  \key d \major
-
   % page 3, stave 3, measure 133
   | d'4 fis,4. g8
   | e4 fis4._( g16 a)
@@ -729,7 +727,6 @@ ciacconaFiveBreaks =
 
 ciacconaFiveA = \relative c'
 {
-  \key d \minor
   s2.*48
 }
 
@@ -752,12 +749,14 @@ ciacconaFive = << \ciacconaFiveA \\ \ciacconaFiveB \\ \ciacconaFiveC >>
 ciaccona =
 {
   \clef treble
-  \key d \minor
   \time 3/4
+  \key d \minor
   \ciacconaOne
   \ciacconaTwo
+  \key d \major
   \ciacconaThree
   \ciacconaFour
+  \key d \minor
   \ciacconaFive
 }
 
