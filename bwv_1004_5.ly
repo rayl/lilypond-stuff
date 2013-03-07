@@ -146,12 +146,12 @@ ciacconaOneA = \relative c'
   | a16_( cis) cis_( e) e_([ g32 f)] g16_([ bes32 a)] \stemDown bes16^([ cis32 d] e16) g,] \stemUp
 
   % page 2, stave 8, measure 85
-  | f32_( a b cis) d_( cis b a) \stemDown \clef "treble^8" \stemUp f'_( e d cis) d_( e f g) a_( g f e) bes'_( a g f)
-  | c32_( e fis gis) a_( gis fis e) \stemDown c'^( b a gis) a^( b c d) e^( d c b) f'^( e d cis)
-  | d^( e f e) d^( f e d) f^( e d f) e^( d f e) d^([ g f e d c bes a)]
+  | f32_([ a b cis)] d_( cis b a) \stemDown \clef "treble^8" \stemUp f'_([ e d cis)] d_( e f g) a_([ g f e)] bes'_( a g f)
+  | c32_([ e fis gis)] a_( gis fis e) \stemDown c'^([ b a gis)] a^( b c d) e^([ d c b)] f'^( e d cis)
+  | d^([ e f e)] d^( f e d) f^([ e d f)] e^( d f e) d^([ g f e d c bes a)]
 
   % page 2, stave 9, measure 88
-  | g32^( a bes a) g^( bes a g) bes^( a g bes) a^( g bes a) \clef treble g^([ f e d cis b a g)] \stemUp
+  | g32^([ a bes a)] g^( bes a g) bes^([ a g bes)] a^( g bes a) \clef treble g^([ f e d cis b a g)] \stemUp
 }
 
 ciacconaOneB = \relative c'
