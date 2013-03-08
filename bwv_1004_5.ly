@@ -280,15 +280,13 @@ ciacconaTwoA = \relative c'
   % page 3, stave 1, measure 119
   | d d d
   | d d cis
-    \autoBeamOn
-  | d,8 \stemDown f'32\([ e d e] d[ c d c bes c bes a] bes[ c d e f16\)] \stemUp d,
-  | c8 \stemDown e'32\([ d c d] c[ bes c bes a bes a g] a[ bes c d ees16\)] \stemUp c,
-  | bes8 \stemDown d'32\([ c bes c] bes[ a bes a g a g f] g[ a bes c d16\)] \stemUp bes,
+  | d,8 \stemDown f'32\([ e d e] d[ c d c] bes[ c bes a] bes[ c d e] f16\) \stemUp d,
+  | c8 \stemDown e'32\([ d c d] c[ bes c bes] a[ bes a g] a[ bes c d] ees16\) \stemUp c,
+  | bes8 \stemDown d'32\([ c bes c] bes[ a bes a] g[ a g f] g[ a bes c] d16\) \stemUp bes,
 
   % page 3, stave 2, measure 124
-  | a32_\( a'[ b cis d16\)] a, g32_\( a'[ b cis d16\)] g,, a32_\( d'[ cis b cis16\)] g
-  | f16_\( e d cis d\) f g a bes a bes g
-    \autoBeamOff
+  | a32^\( \stemDown a'[ b cis d16\)] \stemUp a, g32^\( \stemDown a'[ b cis d16\)] \stemUp g,, a32^\( \stemDown d'[ cis b cis16\)] \stemUp g
+  | f16_\([ e d cis] d\)[ f g a] bes[ a bes g]
   | e'4 e4. e8
   | f4 d4. d8
 
