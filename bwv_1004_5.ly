@@ -221,6 +221,7 @@ ciacconaOneB = \relative c'
 ciacconaOne =
 {
   \partial 2
+  \set Score.currentBarNumber = #2
   << \ciacconaOneA \\ \ciacconaOneB >>
 }
 
