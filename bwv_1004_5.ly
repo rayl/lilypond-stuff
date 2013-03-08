@@ -140,10 +140,10 @@ ciacconaOneA = \relative c'
   | a,16 d f a \stemDown d a f d \stemUp a e' g cis
 
   % page 2, stave 7, measure 81
-  | d,16( \stemDown bes'')[ bes( gis) gis(] f) f( d) d b gis e \stemUp
-  | cis16( \stemDown a'')[ a( fis) fis(] ees) ees( c) c a fis d \stemUp
-  | b16( \stemDown g'')[ g( ees)] ees( cis) cis( bes) bes g e cis \stemUp
-  | a16_( cis) cis_( e) e_([ g32 f)] g16_([ bes32 a)] \stemDown bes16^([ cis32 d] e16) g,] \stemUp
+  | d,16([ \stemDown bes'') bes( gis)] gis( f) f( d) d[ b gis e] \stemUp
+  | cis16([ \stemDown a'') a( fis)] fis( ees) ees( c) c[ a fis d] \stemUp
+  | b16([ \stemDown g'') g( ees)] ees( cis) cis( bes) bes g e cis \stemUp
+  | a16_( cis) cis_( e) e_( g32[ f) g16_(] bes32[ a) bes16^(] \stemDown cis32[ d e16)] g, \stemUp
 
   % page 2, stave 8, measure 85
   | f32_([ a b cis)] d_( cis b a) \stemDown \clef "treble^8" \stemUp f'_([ e d cis)] d_( e f g) a_([ g f e)] bes'_( a g f)
