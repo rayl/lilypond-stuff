@@ -721,41 +721,42 @@ ciacconaFour = << \ciacconaFourA \\ \ciacconaFourB \\ \ciacconaFourC >>
 
 ciacconaFiveBreaks =
 {
-  \repeat unfold 12 \fourMeasures
+  \repeat unfold 4 \fourMeasures
+  \repeat unfold 2 \twoMeasures
+  \repeat unfold 7 \fourMeasures
 }
 
 ciacconaFiveA = \relative c'
 {
   % page 4, stave 5, measure 209
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  | d'4 bes4. bes8
+  | bes8. e16 bes_( g) a e c8 a'
+  | a8. d16 a_( fis) g d bes8 g'
+  | g8. e'16 cis_( a bes g) cis,8 a'
+  | f8. d16 \stemDown f a d cis d( e f) a, \stemUp
+  | f'8. d,16 \stemDown g bes ees d ees( c f,) a, \stemUp
 
   % page 4, stave 6, measure 215
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  | ees''8. cis16 d a bes fis g_( d ees) g
+  | cis8 d d8. b16 \stemDown cis( e g) a,
+  | d,( a' cis) g' f( d cis d) d, d'( cis d)
+  | e,( g cis) a' g( d cis d) d, d'( cis d)
+  | e,( a cis) bes' a d,( cis d) f, d'( cis d)
 
   % page 4, stave 7, measure 220
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  | g,( bes d) bes' e,( d cis d) a d cis eis
+  | f d a( g \stemUp f) a d,_( c b) g' d' f \stemDown
+  | e c g( f \stemUp e) g c,_( bes a) f' c' ees \stemDown
+  | d bes f( ees \stemUp d) f bes,_( a g) cis e bes'
 
-  % page 4, stave 8, measure 225
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  % page 4, stave 8, measure 224
+  | a_( f d) bes' g e cis e a, g' f e \autoBeamOff
+  | d[ a' b cis] \stemDown d[ f g a] bes \stemUp g,32_([ f e f] g16)
+  | c,[ g' a bes] \stemDown c[ e f g] a \stemUp f,32_([ e d e] f16)
+  | bes, \stemDown d''32([ c bes c] d16) g, bes32([ a g a] bes16) e, g32([ f e f] g16)
 
-  % page 4, stave 9, measure 229
-  | s4 s4 s4
+  % page 4, stave 9, measure 228
+  | cis, e32([ d cis d e cis)] \stemUp g16 bes32_([ a g a bes g)] e32_([ d cis d e f g e)]
   | s4 s4 s4
   | s4 s4 s4
   | s4 s4 s4
@@ -800,35 +801,26 @@ ciacconaFiveA = \relative c'
 ciacconaFiveB = \relative c'
 {
   % page 4, stave 5, measure 209
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  | d4 <d f>2
+  | <c e>8. s16 s4 s8 <c e>
+  | <bes d>8. s16 s4 s8 bes
+  | a8. s16 s4 s8 <cis e>
+  | d8. s16 s2
+  | <g, d' bes'>8. s16 s2
 
   % page 4, stave 6, measure 215
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  | <bes f'>8. s16 s2
+  | <a g'>8 <g f'>8 <a e'>8. s16 s4
+  | s2.*3
 
   % page 4, stave 7, measure 220
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  | s2.*5
 
-  % page 4, stave 8, measure 225
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  % page 4, stave 8, measure 224
+  | s2.*4
 
-  % page 4, stave 9, measure 229
-  | s4 s4 s4
+  % page 4, stave 9, measure 228
+  | s2.
   | s4 s4 s4
   | s4 s4 s4
   | s4 s4 s4
