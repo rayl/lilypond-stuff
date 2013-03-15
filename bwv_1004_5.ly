@@ -744,10 +744,10 @@ ciacconaFiveA = \relative c'
   | e,( a cis) bes' a d,( cis d) f, d'( cis d)
 
   % page 4, stave 7, measure 220
-  | g,( bes d) bes' e,( d cis d) a d cis eis
-  | f d a( g \stemUp f) a d,_( c b) g' d' f \stemDown
-  | e c g( f \stemUp e) g c,_( bes a) f' c' ees \stemDown
-  | d bes f( ees \stemUp d) f bes,_( a g) cis e bes'
+  | g,( bes d) bes' e,( d cis d) a d cis eis \stemUp
+  | f d a_( g f) a d,_( c b) g' d' f
+  | e c g_( f e) g c,_( bes a) f' c' ees
+  | d bes f_( ees d) f bes,_( a g) cis e bes'
 
   % page 4, stave 8, measure 224
   | a_( f d) bes' g e cis e a, g' f e \autoBeamOff
