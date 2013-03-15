@@ -730,11 +730,11 @@ ciacconaFiveA = \relative c'
 {
   % page 4, stave 5, measure 209
   | d'4 bes4. bes8
-  | bes8. e16 bes_( g) a e c8 a'
-  | a8. d16 a_( fis) g d bes8 g'
-  | g8. e'16 cis_( a bes g) cis,8 a'
-  | f8. d16 \stemDown f a d cis d( e f) a, \stemUp
-  | f'8. d,16 \stemDown g bes ees d ees( c f,) a, \stemUp
+  | bes8. e16 bes_( g a) e c8 a'
+  | a8. d16 a_( fis g) d bes8 g'
+  | g8. e'16 cis_( a bes) g cis,8 a'
+  | f8. d16 f a d cis \stemDown d( e f) a, \stemUp
+  | f'8. d,16 g bes ees d ees_( c f,) a,
 
   % page 4, stave 6, measure 215
   | ees''8. cis16 d a bes fis g_( d ees) g
@@ -810,7 +810,7 @@ ciacconaFiveB = \relative c'
 
   % page 4, stave 6, measure 215
   | <bes f'>8. s16 s2
-  | <a g'>8 <g f'>8 <a e'>8. s16 s4
+  | <a g'>8[ <g f'>8] <a e'>8. s16 s4
   | s2.*3
 
   % page 4, stave 7, measure 220
