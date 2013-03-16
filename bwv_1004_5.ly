@@ -717,13 +717,12 @@ ciacconaFour = << \ciacconaFourA \\ \ciacconaFourB \\ \ciacconaFourC >>
 
 
 
-% --------------------- bars 209 through 256 ---------------------------
+% --------------------- bars 209 through 228 ---------------------------
 
 ciacconaFiveBreaks =
 {
   \repeat unfold 4 \fourMeasures
   \repeat unfold 2 \twoMeasures
-  \repeat unfold 7 \fourMeasures
 }
 
 ciacconaFiveA = \relative c'
@@ -757,45 +756,6 @@ ciacconaFiveA = \relative c'
 
   % page 4, stave 9, measure 228
   | cis, e32([ d cis d e cis)] \stemUp g16 bes32_([ a g a bes g)] e32_([ d cis d e f g e)]
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-
-  % page 4, stave 10, measure 233
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-
-  % page 4, stave 11, measure 238
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-
-  % page 4, stave 12, measure 242
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-
-  % page 5, stave 1, measure 245
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-
-  % page 5, stave 2, measure 248
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-
-  % page 5, stave 3, measure 251
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
 }
 
 ciacconaFiveB = \relative c'
@@ -814,13 +774,28 @@ ciacconaFiveB = \relative c'
   | s2.*3
 
   % page 4, stave 7, measure 220
-  | s2.*5
+  | s2.*4
 
   % page 4, stave 8, measure 224
   | s2.*4
 
   % page 4, stave 9, measure 228
   | s2.
+}
+
+ciacconaFive = << \ciacconaFiveA \\ \ciacconaFiveB >>
+
+
+
+% --------------------- bars 229 through 256 ---------------------------
+ciacconaSixBreaks =
+{
+  \repeat unfold 7 \fourMeasures
+}
+
+ciacconaSixA = \relative c'
+{
+  % page 4, stave 9, measure 229
   | s4 s4 s4
   | s4 s4 s4
   | s4 s4 s4
@@ -862,7 +837,51 @@ ciacconaFiveB = \relative c'
   | s4 s4 s4
 }
 
-ciacconaFive = << \ciacconaFiveA \\ \ciacconaFiveB >>
+ciacconaSixB = \relative c'
+{
+  % page 4, stave 9, measure 229
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
+  % page 4, stave 10, measure 233
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
+  % page 4, stave 11, measure 238
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
+  % page 4, stave 12, measure 242
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
+  % page 5, stave 1, measure 245
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
+  % page 5, stave 2, measure 248
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+
+  % page 5, stave 3, measure 251
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+  | s4 s4 s4
+}
+
+ciacconaSix = << \ciacconaSixA \\ \ciacconaSixB >>
 
 
 
@@ -885,6 +904,8 @@ ciaccona =
   \key d \minor
   \barNumberCheck #209
   \ciacconaFive
+  \barNumberCheck #229
+  \ciacconaSix
 }
 
 ciacconaBreaks =
@@ -895,5 +916,6 @@ ciacconaBreaks =
   \ciacconaThreeBreaks
   \ciacconaFourBreaks
   \ciacconaFiveBreaks
+  \ciacconaSixBreaks
 }
 
