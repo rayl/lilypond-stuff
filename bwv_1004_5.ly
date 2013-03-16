@@ -873,12 +873,17 @@ ciaccona =
   \clef treble
   \time 3/4
   \key d \minor
+  \barNumberCheck #1
   \ciacconaOne
+  \barNumberCheck #89
   \ciacconaTwo
   \key d \major
+  \barNumberCheck #133
   \ciacconaThree
+  \barNumberCheck #185
   \ciacconaFour
   \key d \minor
+  \barNumberCheck #209
   \ciacconaFive
 }
 
