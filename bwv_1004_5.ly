@@ -107,7 +107,7 @@ ciacconaOneA = \relative c'
   | d s s d e \noBeam s
 
   % page 2, stave 1, measure 60
-  | a,8 d d16_([ cis)] a'8 \noBeam a16_( g) a_( e)
+  | a,8 d d16([ cis)] a'8 \noBeam a16( g) a( e)
   | f8 s d s s4
   | e8 s c s s4
   | d8 s bes s s4
@@ -200,15 +200,15 @@ ciacconaOneB = \relative c'
 
   % page 1, stave 12, measure 56
   | s2.
-  | d'8[ a d,] d' bes16^( a bes) g
+  | d'8[ a d,] d' bes16_( a bes) g
   | c8[ g c,] c' a16 g a f
-  | bes8[ f bes,] bes' g16^( f g e)
+  | bes8[ f bes,] bes' g16_( f) g_( e)
 
   % page 2, stave 1, measure 60
-  | f16^( e) f^( d) <e a,>8 \noBeam d'16^([ b)] cis8 s
-  | d16^( cis d) a f^( e f) d bes g' d' bes'
-  | c,16^( b c) g e^( d e) c a f' c' a'
-  | f,^( ees) f^( d) d^( c) d^( bes) g e' b' g'
+  | f16_( e) f_( d) <e a,>8 \noBeam d'16_([ b)] cis8 s
+  | d16_( cis d) a f_( e f) d bes g' d' bes'
+  | c,16_( b c) g e_( d e) c a f' c' a'
+  | f,_( ees) f_( d) d_( c) d_( bes) g e' b' g'
   | s2.
 
   % page 2, stave 2, measure 65
