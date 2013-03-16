@@ -839,62 +839,69 @@ ciacconaSix = << \ciacconaSixA \\ \ciacconaSixB >>
 
 
 
-% --------------------- bars 241 through 255 ---------------------------
+% --------------------- bars 241 through 257 ---------------------------
 ciacconaSevenBreaks =
 {
-  \repeat unfold 4 \fourMeasures
+  \repeat unfold 4 \twoMeasures
+  \repeat unfold 2 \fourMeasures
+  \brk
 }
 
 ciacconaSevenA = \relative c'
 {
+  \autoBeamOff
+
   % page 4, stave 12, measure 241
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  | f16_([ a)] \times 2/3 { d,_([ f a)] }
+    \scaleDurations #'(2 . 3) {
+    f_([ a d)] \stemDown a([ d f)] bes,([ d g)] g,([ d' bes')]
+  | e,,([ c' bes')] \stemUp c,,_([ e g)] e_([ g c)] \stemDown g([ c e)] a,([ c f)] f,([ c' a')]
+  | d,,([ bes' a')] \stemUp bes,,_([ d f)] d_([ f bes)] \stemDown f([ bes d)] g,([ bes ees)] ees,([ bes' g')]
 
   % page 5, stave 1, measure 244
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  | e,([ cis' bes')] f,([ d' a')] g,([ e' g)] gis,([ d' f)] a,([ d e)] a,([ cis e)]
+  | \stemUp d, \stemDown a''([ g f)] f([ e d)] d([ c bes)] bes([ a g)] bes([ c d e f)]
+  | \stemUp c, \stemDown g''([ f e)] e([ d c)] c([ bes a)] a([ g f)] a([ bes c d ees)]
 
   % page 5, stave 2, measure 247
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  | \stemUp bes, \stemDown f''([ ees d)] d([ c bes)] bes([ a g)] \stemUp g_([ f e)] e_([ d cis)] cis_([ b]
+    }
+  | a) b32_([ cis d e f g] a[ b cis d e f g f] e[ d cis b a g f e]
+  | d8) r a'4. a8
 
   % page 5, stave 3, measure 250
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  | e'4 e4. e8
+  | f4 d4. c8
+  | <g bes>4 <f a> g16[ f_( e f)]
+  | g[ e_( f d)] <f bes>4 <fis a>
+  | <g d'> <fis c'> <g bes>
+  | cis,16_([ e g bes] a[ g e' g,)] f4~
+  | f8 e e4. d8
+  | d2.
 }
 
 ciacconaSevenB = \relative c'
 {
   % page 4, stave 12, measure 241
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  | d16 s16 s8 s4 s4
+  | s2.*2
 
   % page 5, stave 1, measure 244
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  | s2.*3
 
   % page 5, stave 2, measure 247
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  | s2.*2
+  | s4 <d f>2
 
   % page 5, stave 3, measure 250
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
-  | s4 s4 s4
+  | <d g bes>4 <cis g' a>2
+  | <d f a>4 <bes f'>2
+  | g4 a cis
+  | d8 s d4 c
+  | bes a g
+  | s2 d'4
+  | g, a2
+  | d2.
 }
 
 ciacconaSeven = << \ciacconaSevenA \\ \ciacconaSevenB >>
@@ -924,6 +931,7 @@ ciaccona =
   \ciacconaSix
   \barNumberCheck #241
   \ciacconaSeven
+  \barNumberCheck #258
 }
 
 ciacconaBreaks =

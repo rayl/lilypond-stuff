@@ -20,6 +20,9 @@
         \new Voice \ciaccona
         \new Voice \ciacconaBreaks
       >>
+    \layout {
+        ragged-last = ##t
+    }
     \header {
       piece = "Ciaccona"
     }
