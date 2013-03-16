@@ -226,13 +226,11 @@ ciacconaOne =
 }
 
 
-% --------------------- bars 89 through 132 ---------------------------
+% --------------------- bars 89 through 120 ---------------------------
 
 ciacconaTwoBreaks =
 {
   \repeat unfold 8 \fourMeasures
-  \repeat unfold 2 \twoMeasures
-  \repeat unfold 2 \fourMeasures
 }
 
 ciacconaTwoA = \relative c'
@@ -280,22 +278,6 @@ ciacconaTwoA = \relative c'
   % page 3, stave 1, measure 119
   | d d d
   | d d cis
-  | d,8 \stemDown f'32\([ e d e] d[ c d c] bes[ c bes a] bes[ c d e] f16\) \stemUp d,
-  | c8 \stemDown e'32\([ d c d] c[ bes c bes] a[ bes a g] a[ bes c d] ees16\) \stemUp c,
-  | bes8 \stemDown d'32\([ c bes c] bes[ a bes a] g[ a g f] g[ a bes c] d16\) \stemUp bes,
-
-  % page 3, stave 2, measure 124
-  | a32^\( \stemDown a'[ b cis d16\)] \stemUp a, g32^\( \stemDown a'[ b cis d16\)] \stemUp g,, a32^\( \stemDown d'[ cis b cis16\)] \stemUp g
-  | f16_\([ e d cis] d\)[ f g a] bes[ a bes g]
-  | e'4 e4. e8
-  | f4 d4. d8
-
-  % page 3, stave 3, measure 128
-  | bes'4 a g
-  | g fis s8 f
-  | f4 e s8 ees
-  | ees4 d s8 d
-  | s d cis4. d8
     \autoBeamOn
 }
 
@@ -345,18 +327,6 @@ ciacconaTwoB = \relative c'
   % page 3, stave 1, measure 119
   | bes bes a
   | gis a2
-  | s2.*5
-
-  % page 3, stave 2, measure 126
-  | d4 cis2
-  | d4 bes2
-
-  % page 3, stave 3, measure 128
-  | g4 a a
-  | d d c8 s
-  | b4 c bes8 s
-  | a4 bes a8 s
-  | gis8 s a2
 
   \revert NoteColumn #'force-hshift
   \autoBeamOn
@@ -408,24 +378,63 @@ ciacconaTwoC = \relative c'
   % page 3, stave 1, measure 119
   | f g f
   | e e2
-  | s2.*5
-
-  % page 3, stave 2, measure 126
-  | <g bes>4 <g a>2
-  | <f a>4 f2
-
-  % page 3, stave 3, measure 128
-  | <g d'>4 <f d'> <e cis'>
-  | <a d> <a c> s
-  | <g d'> <g c> s
-  | f f s
-  | s e2
-
-  \revert NoteColumn #'force-hshift
-  \autoBeamOn
 }
 
 ciacconaTwo = << \ciacconaTwoA \\ \ciacconaTwoB \\ \ciacconaTwoC >>
+
+
+
+% --------------------- bars 121 through 132 --------------------------
+
+ciacconaEightBreaks =
+{
+  \repeat unfold 2 \twoMeasures
+  \repeat unfold 2 \fourMeasures
+}
+
+ciacconaEightA = \relative c'
+{
+  % page 3, stave 1, measure 121
+    \autoBeamOff
+  | d8 \stemDown f'32\([ e d e] d[ c d c] bes[ c bes a] bes[ c d e] f16\) \stemUp d,
+  | c8 \stemDown e'32\([ d c d] c[ bes c bes] a[ bes a g] a[ bes c d] ees16\) \stemUp c,
+  | bes8 \stemDown d'32\([ c bes c] bes[ a bes a] g[ a g f] g[ a bes c] d16\) \stemUp bes,
+
+  % page 3, stave 2, measure 124
+  | a32^\( \stemDown a'[ b cis d16\)] \stemUp a, g32^\( \stemDown a'[ b cis d16\)] \stemUp g,, a32^\( \stemDown d'[ cis b cis16\)] \stemUp g
+  | f16_\([ e d cis] d\)[ f g a] bes[ a bes g]
+    \autoBeamOn
+  | e'4 e4. e8
+  | f4 d4. d8
+
+  % page 3, stave 3, measure 128
+  | <g, d' bes'>4 <f d' a'> <e cis' g'>
+  | <a d g> <a c fis> s8 f'
+  | <g, d' f>4 <g c e> s8 ees'
+  | <f, ees'>4 <f d'> s8 d'
+  | s d cis4. d8
+}
+
+
+ciacconaEightB = \relative c'
+{
+  % page 3, stave 1, measure 121
+  | s2.*3
+
+  % page 3, stave 2, measure 124
+  | s2.*2
+  | <d g bes>4 <cis g' a>2
+  | <d f a>4 <bes f'>2
+
+  % page 3, stave 3, measure 128
+  | g4 a a
+  | d d c8 s
+  | b4 c bes8 s
+  | a4 bes a8 s
+  | gis8 s <a e'>2
+}
+
+ciacconaEight = << \ciacconaEightA \\ \ciacconaEightB >>
 
 
 
@@ -923,6 +932,8 @@ ciaccona =
   \ciacconaOne
   \barNumberCheck #89
   \ciacconaTwo
+  \barNumberCheck #121
+  \ciacconaEight
   \key d \major
   \barNumberCheck #133
   \ciacconaThree
@@ -943,6 +954,7 @@ ciacconaBreaks =
   \time 3/4
   \ciacconaOneBreaks
   \ciacconaTwoBreaks
+  \ciacconaEightBreaks
   \ciacconaThreeBreaks
   \ciacconaFourBreaks
   \ciacconaFiveBreaks
