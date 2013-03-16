@@ -23,3 +23,9 @@ fourMeasures  = { \repeat unfold 3 \bar \brk }
 
 \pointAndClickOff
 
+
+\include "multi-mark-engraver.ly"
+markDown = #(define-music-function (parser location text) (markup?)
+               (make-music 'MarkEvent
+                           'direction DOWN
+                           'label text))

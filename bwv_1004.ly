@@ -22,6 +22,11 @@
       >>
     \layout {
         ragged-last = ##t
+        \context {
+           \Score
+           \remove "Mark_engraver"
+           \consists #multi-mark-engraver
+         }
     }
     \header {
       piece = "Ciaccona"

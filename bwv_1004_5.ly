@@ -905,6 +905,7 @@ ciacconaSevenB = \relative c'
   | s2 d'4
   | g, a2
   | d2.
+  \markDown \markup { \musicglyph #"scripts.dfermata" }
 }
 
 ciacconaSeven = << \ciacconaSevenA \\ \ciacconaSevenB >>
