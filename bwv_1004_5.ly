@@ -878,6 +878,9 @@ ciacconaSevenA = \relative c'
   | cis,16_([ e g bes] a[ g e' g,)] f4~
   | f8 e e4. d8
   | d2.
+  \override Score.RehearsalMark
+    #'break-visibility = #begin-of-line-invisible
+  \mark \markup { \musicglyph #"scripts.ufermata" }
 }
 
 ciacconaSevenB = \relative c'
