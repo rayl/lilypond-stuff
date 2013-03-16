@@ -27,7 +27,7 @@ ciacconaOneA = \relative c'
     a'4. a8
   | e'4 e4. e8
   | f4 d4. c8
-  | bes4 a g16 f_( e f)
+  | <g bes>4 <f a> g16 f_( e f)
   | g16 e_( f d) a'4. a8
   | e'4 e4. e8
   | f4 d4. d8
@@ -160,7 +160,7 @@ ciacconaOneB = \relative c'
     <d f>2
   | <d g bes>4 <cis g' a>2
   | <d f a>4 <bes f'>2
-  | <g g'>4 <a f'> cis
+  | g4 a cis
   | d8 s <d f>2
   | <d g bes>4 <cis g' a>2
   | <d f a>4 <bes f'>2
